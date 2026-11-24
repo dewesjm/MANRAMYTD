@@ -1,0 +1,9697 @@
+{
+  "$comment": "MANRAM YTD sample data, made from ZORD's people (same ids as MWQ, Deckfoot and ZORD) plus departments, pernrs, reporting lines, dose profiles and dosimeter readings. Doses in mrem. Fake data only. Made by scripts/make-sample-data.cjs; don't edit by hand.",
+  "asOf": "2026-11-21",
+  "departments": [
+    {
+      "code": "X01",
+      "name": "Ship Repair Management"
+    },
+    {
+      "code": "X09",
+      "name": "Information Technology"
+    },
+    {
+      "code": "X11",
+      "name": "Pipe Shop"
+    },
+    {
+      "code": "X26",
+      "name": "Weld Shop"
+    },
+    {
+      "code": "X31",
+      "name": "Machine Shop"
+    },
+    {
+      "code": "X51",
+      "name": "Electrical Shop"
+    },
+    {
+      "code": "X72",
+      "name": "Rigging"
+    }
+  ],
+  "people": [
+    {
+      "pernr": "10000118",
+      "id": "u-director",
+      "firstName": "Pat",
+      "lastName": "Walsh",
+      "title": "Director, Ship Repair",
+      "department": "X01",
+      "supervisor1": null,
+      "supervisor2": null
+    },
+    {
+      "pernr": "10000342",
+      "id": "u-general-foreman",
+      "firstName": "Chris",
+      "lastName": "Okafor",
+      "title": "General Foreman",
+      "department": "X01",
+      "supervisor1": "10000118",
+      "supervisor2": null
+    },
+    {
+      "pernr": "10001207",
+      "id": "u-foreman-haddad",
+      "firstName": "Rita",
+      "lastName": "Haddad",
+      "title": "Pipe Foreman",
+      "department": "X11",
+      "supervisor1": "10000342",
+      "supervisor2": "10000118"
+    },
+    {
+      "pernr": "10001455",
+      "id": "u-foreman-nguyen",
+      "firstName": "Tomas",
+      "lastName": "Nguyen",
+      "title": "Weld Foreman",
+      "department": "X26",
+      "supervisor1": "10000342",
+      "supervisor2": "10000118"
+    },
+    {
+      "pernr": "10001693",
+      "id": "u-foreman-brennan",
+      "firstName": "Lee",
+      "lastName": "Brennan",
+      "title": "Shop Foreman",
+      "department": "X31",
+      "supervisor1": "10000342",
+      "supervisor2": "10000118"
+    },
+    {
+      "pernr": "10010482",
+      "id": "u-pipefitter",
+      "firstName": "Dana",
+      "lastName": "Ortiz",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10010931",
+      "id": "u-pipefitter-2",
+      "firstName": "Riley",
+      "lastName": "Shaw",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10011374",
+      "id": "u-pipefitter-3",
+      "firstName": "Jamie",
+      "lastName": "Novak",
+      "title": "Pipefitter Apprentice",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10020917",
+      "id": "u-welder",
+      "firstName": "Sam",
+      "lastName": "Kowalski",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10031206",
+      "id": "u-welder-new",
+      "firstName": "Jordan",
+      "lastName": "Reyes",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10021688",
+      "id": "u-welder-3",
+      "firstName": "Avery",
+      "lastName": "Brooks",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10041530",
+      "id": "u-machinist",
+      "firstName": "Alex",
+      "lastName": "Chen",
+      "title": "Machinist",
+      "department": "X31",
+      "supervisor1": "10001693",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10052274",
+      "id": "u-shop-welder",
+      "firstName": "Morgan",
+      "lastName": "Lee",
+      "title": "Shop Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10000977",
+      "id": "u-admin",
+      "firstName": "Casey",
+      "lastName": "Park",
+      "title": "Planning Admin",
+      "department": "X01",
+      "supervisor1": "10000118",
+      "supervisor2": null
+    },
+    {
+      "pernr": "10009001",
+      "id": "u-developer",
+      "firstName": "Cameron",
+      "lastName": "Ellis",
+      "title": "Developer",
+      "department": "X09",
+      "supervisor1": "10000118",
+      "supervisor2": null
+    },
+    {
+      "pernr": "10001822",
+      "id": "u-foreman-ito",
+      "firstName": "Ken",
+      "lastName": "Ito",
+      "title": "Electrical Foreman",
+      "department": "X51",
+      "supervisor1": "10000342",
+      "supervisor2": "10000118"
+    },
+    {
+      "pernr": "10001964",
+      "id": "u-foreman-mendez",
+      "firstName": "Sofia",
+      "lastName": "Mendez",
+      "title": "Rigging Foreman",
+      "department": "X72",
+      "supervisor1": "10000342",
+      "supervisor2": "10000118"
+    },
+    {
+      "pernr": "10060000",
+      "id": "u-aaron-blake",
+      "firstName": "Aaron",
+      "lastName": "Blake",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060137",
+      "id": "u-bianca-cruz",
+      "firstName": "Bianca",
+      "lastName": "Cruz",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060274",
+      "id": "u-caleb-dunn",
+      "firstName": "Caleb",
+      "lastName": "Dunn",
+      "title": "Machinist",
+      "department": "X31",
+      "supervisor1": "10001693",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060411",
+      "id": "u-dmitri-volkov",
+      "firstName": "Dmitri",
+      "lastName": "Volkov",
+      "title": "Electrician",
+      "department": "X51",
+      "supervisor1": "10001822",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060548",
+      "id": "u-elena-park",
+      "firstName": "Elena",
+      "lastName": "Park",
+      "title": "Rigger",
+      "department": "X72",
+      "supervisor1": "10001964",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060685",
+      "id": "u-felix-grant",
+      "firstName": "Felix",
+      "lastName": "Grant",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060822",
+      "id": "u-gina-torres",
+      "firstName": "Gina",
+      "lastName": "Torres",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10060959",
+      "id": "u-hassan-ali",
+      "firstName": "Hassan",
+      "lastName": "Ali",
+      "title": "Machinist",
+      "department": "X31",
+      "supervisor1": "10001693",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061096",
+      "id": "u-ivy-chen",
+      "firstName": "Ivy",
+      "lastName": "Chen",
+      "title": "Electrician",
+      "department": "X51",
+      "supervisor1": "10001822",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061233",
+      "id": "u-jalen-moore",
+      "firstName": "Jalen",
+      "lastName": "Moore",
+      "title": "Rigger",
+      "department": "X72",
+      "supervisor1": "10001964",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061370",
+      "id": "u-kara-lindqvist",
+      "firstName": "Kara",
+      "lastName": "Lindqvist",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061507",
+      "id": "u-luis-romero",
+      "firstName": "Luis",
+      "lastName": "Romero",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061644",
+      "id": "u-maya-patel",
+      "firstName": "Maya",
+      "lastName": "Patel",
+      "title": "Machinist",
+      "department": "X31",
+      "supervisor1": "10001693",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061781",
+      "id": "u-nolan-price",
+      "firstName": "Nolan",
+      "lastName": "Price",
+      "title": "Electrician",
+      "department": "X51",
+      "supervisor1": "10001822",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10061918",
+      "id": "u-olivia-hart",
+      "firstName": "Olivia",
+      "lastName": "Hart",
+      "title": "Rigger",
+      "department": "X72",
+      "supervisor1": "10001964",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062055",
+      "id": "u-paulo-silva",
+      "firstName": "Paulo",
+      "lastName": "Silva",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062192",
+      "id": "u-quinn-foster",
+      "firstName": "Quinn",
+      "lastName": "Foster",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062329",
+      "id": "u-rosa-delgado",
+      "firstName": "Rosa",
+      "lastName": "Delgado",
+      "title": "Machinist",
+      "department": "X31",
+      "supervisor1": "10001693",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062466",
+      "id": "u-seth-turner",
+      "firstName": "Seth",
+      "lastName": "Turner",
+      "title": "Electrician",
+      "department": "X51",
+      "supervisor1": "10001822",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062603",
+      "id": "u-tanya-ivanova",
+      "firstName": "Tanya",
+      "lastName": "Ivanova",
+      "title": "Rigger",
+      "department": "X72",
+      "supervisor1": "10001964",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062740",
+      "id": "u-umar-haddad",
+      "firstName": "Umar",
+      "lastName": "Haddad",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10062877",
+      "id": "u-vera-kim",
+      "firstName": "Vera",
+      "lastName": "Kim",
+      "title": "Welder",
+      "department": "X26",
+      "supervisor1": "10001455",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10063014",
+      "id": "u-wes-carter",
+      "firstName": "Wes",
+      "lastName": "Carter",
+      "title": "Machinist",
+      "department": "X31",
+      "supervisor1": "10001693",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10063151",
+      "id": "u-xavier-bell",
+      "firstName": "Xavier",
+      "lastName": "Bell",
+      "title": "Electrician",
+      "department": "X51",
+      "supervisor1": "10001822",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10063288",
+      "id": "u-yara-nasser",
+      "firstName": "Yara",
+      "lastName": "Nasser",
+      "title": "Rigger",
+      "department": "X72",
+      "supervisor1": "10001964",
+      "supervisor2": "10000342"
+    },
+    {
+      "pernr": "10063425",
+      "id": "u-zeke-holloway",
+      "firstName": "Zeke",
+      "lastName": "Holloway",
+      "title": "Pipefitter",
+      "department": "X11",
+      "supervisor1": "10001207",
+      "supervisor2": "10000342"
+    }
+  ],
+  "profiles": [
+    {
+      "pernr": "10000118",
+      "controlLevel": 250,
+      "medDate": "2025-04-08",
+      "trainingDate": "2026-10-24"
+    },
+    {
+      "pernr": "10000342",
+      "controlLevel": 250,
+      "medDate": "2026-02-18",
+      "trainingDate": "2026-09-20"
+    },
+    {
+      "pernr": "10001207",
+      "controlLevel": 500,
+      "medDate": "2026-05-02",
+      "trainingDate": "2025-06-24"
+    },
+    {
+      "pernr": "10001455",
+      "controlLevel": 500,
+      "medDate": "2025-11-18",
+      "trainingDate": "2026-06-28"
+    },
+    {
+      "pernr": "10001693",
+      "controlLevel": 1000,
+      "medDate": "2026-08-07",
+      "trainingDate": "2025-08-09"
+    },
+    {
+      "pernr": "10010482",
+      "controlLevel": 500,
+      "medDate": "2026-08-14",
+      "trainingDate": "2026-01-12"
+    },
+    {
+      "pernr": "10010931",
+      "controlLevel": 500,
+      "medDate": "2025-11-02",
+      "trainingDate": "2025-12-16"
+    },
+    {
+      "pernr": "10011374",
+      "controlLevel": 250,
+      "medDate": "2025-10-12",
+      "trainingDate": "2025-07-09"
+    },
+    {
+      "pernr": "10020917",
+      "controlLevel": 1000,
+      "medDate": "2025-08-27",
+      "trainingDate": "2026-06-06"
+    },
+    {
+      "pernr": "10031206",
+      "controlLevel": 500,
+      "medDate": "2026-02-26",
+      "trainingDate": "2025-04-07"
+    },
+    {
+      "pernr": "10021688",
+      "controlLevel": 500,
+      "medDate": "2025-02-07",
+      "trainingDate": "2025-04-15"
+    },
+    {
+      "pernr": "10041530",
+      "controlLevel": 500,
+      "medDate": "2025-06-16",
+      "trainingDate": "2026-03-05"
+    },
+    {
+      "pernr": "10052274",
+      "controlLevel": 500,
+      "medDate": "2025-10-27",
+      "trainingDate": "2026-09-30"
+    },
+    {
+      "pernr": "10001822",
+      "controlLevel": 500,
+      "medDate": "2026-09-25",
+      "trainingDate": "2026-06-19"
+    },
+    {
+      "pernr": "10001964",
+      "controlLevel": 500,
+      "medDate": "2025-11-13",
+      "trainingDate": "2026-04-29"
+    },
+    {
+      "pernr": "10060000",
+      "controlLevel": 500,
+      "medDate": "2025-11-17",
+      "trainingDate": "2026-10-19"
+    },
+    {
+      "pernr": "10060137",
+      "controlLevel": 1000,
+      "medDate": "2025-09-22",
+      "trainingDate": "2026-01-30"
+    },
+    {
+      "pernr": "10060274",
+      "controlLevel": 1000,
+      "medDate": "2026-07-04",
+      "trainingDate": "2026-06-14"
+    },
+    {
+      "pernr": "10060411",
+      "controlLevel": 500,
+      "medDate": "2025-01-21",
+      "trainingDate": "2026-08-03"
+    },
+    {
+      "pernr": "10060548",
+      "controlLevel": 1000,
+      "medDate": "2024-12-10",
+      "trainingDate": "2026-06-17"
+    },
+    {
+      "pernr": "10060685",
+      "controlLevel": 500,
+      "medDate": "2025-05-22",
+      "trainingDate": "2025-10-02"
+    },
+    {
+      "pernr": "10060822",
+      "controlLevel": 500,
+      "medDate": "2025-04-27",
+      "trainingDate": "2026-03-19"
+    },
+    {
+      "pernr": "10060959",
+      "controlLevel": 500,
+      "medDate": "2025-02-13",
+      "trainingDate": "2025-05-27"
+    },
+    {
+      "pernr": "10061096",
+      "controlLevel": 500,
+      "medDate": "2024-12-19",
+      "trainingDate": "2026-05-27"
+    },
+    {
+      "pernr": "10061233",
+      "controlLevel": 500,
+      "medDate": "2025-04-01",
+      "trainingDate": "2026-08-06"
+    },
+    {
+      "pernr": "10061370",
+      "controlLevel": 500,
+      "medDate": "2026-06-14",
+      "trainingDate": "2025-06-03"
+    },
+    {
+      "pernr": "10061507",
+      "controlLevel": 500,
+      "medDate": "2026-01-28",
+      "trainingDate": "2025-07-29"
+    },
+    {
+      "pernr": "10061644",
+      "controlLevel": 500,
+      "medDate": "2026-06-18",
+      "trainingDate": "2026-11-14"
+    },
+    {
+      "pernr": "10061781",
+      "controlLevel": 500,
+      "medDate": "2026-09-02",
+      "trainingDate": "2026-11-12"
+    },
+    {
+      "pernr": "10061918",
+      "controlLevel": 500,
+      "medDate": "2025-12-23",
+      "trainingDate": "2026-11-03"
+    },
+    {
+      "pernr": "10062055",
+      "controlLevel": 1000,
+      "medDate": "2025-01-19",
+      "trainingDate": "2025-03-26"
+    },
+    {
+      "pernr": "10062192",
+      "controlLevel": 500,
+      "medDate": "2026-04-20",
+      "trainingDate": "2025-10-26"
+    },
+    {
+      "pernr": "10062329",
+      "controlLevel": 500,
+      "medDate": "2026-09-23",
+      "trainingDate": "2025-02-15"
+    },
+    {
+      "pernr": "10062466",
+      "controlLevel": 500,
+      "medDate": "2026-07-19",
+      "trainingDate": "2025-01-27"
+    },
+    {
+      "pernr": "10062603",
+      "controlLevel": 500,
+      "medDate": "2025-10-31",
+      "trainingDate": "2026-01-30"
+    },
+    {
+      "pernr": "10062740",
+      "controlLevel": 500,
+      "medDate": "2024-12-07",
+      "trainingDate": "2025-04-02"
+    },
+    {
+      "pernr": "10062877",
+      "controlLevel": 1000,
+      "medDate": "2026-08-29",
+      "trainingDate": "2026-05-10"
+    },
+    {
+      "pernr": "10063014",
+      "controlLevel": 500,
+      "medDate": "2026-06-01",
+      "trainingDate": "2025-11-29"
+    },
+    {
+      "pernr": "10063151",
+      "controlLevel": 500,
+      "medDate": "2026-06-21",
+      "trainingDate": "2025-10-08"
+    },
+    {
+      "pernr": "10063288",
+      "controlLevel": 500,
+      "medDate": "2026-06-16",
+      "trainingDate": "2026-08-27"
+    },
+    {
+      "pernr": "10063425",
+      "controlLevel": 500,
+      "medDate": "2026-05-20",
+      "trainingDate": "2025-05-05"
+    }
+  ],
+  "readings": [
+    {
+      "pernr": "10000118",
+      "date": "2025-12-18",
+      "deviceId": "D-20400",
+      "hours": 3,
+      "dose": 1
+    },
+    {
+      "pernr": "10000118",
+      "date": "2026-01-23",
+      "deviceId": "D-20400",
+      "hours": 3.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10000118",
+      "date": "2026-02-02",
+      "deviceId": "D-20400",
+      "hours": 6.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10000118",
+      "date": "2026-04-06",
+      "deviceId": "D-20400",
+      "hours": 7,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10000118",
+      "date": "2026-06-05",
+      "deviceId": "D-20400",
+      "hours": 3,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10000118",
+      "date": "2026-06-22",
+      "deviceId": "D-20400",
+      "hours": 7,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10000118",
+      "date": "2026-11-10",
+      "deviceId": "D-20400",
+      "hours": 1.5,
+      "dose": 0.9
+    },
+    {
+      "pernr": "10000342",
+      "date": "2025-11-06",
+      "deviceId": "D-20401",
+      "hours": 2,
+      "dose": 1.2
+    },
+    {
+      "pernr": "10000342",
+      "date": "2025-11-19",
+      "deviceId": "D-20401",
+      "hours": 4.5,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10000342",
+      "date": "2025-12-31",
+      "deviceId": "D-20401",
+      "hours": 8,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10000342",
+      "date": "2026-03-05",
+      "deviceId": "D-20401",
+      "hours": 6,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10000342",
+      "date": "2026-05-29",
+      "deviceId": "D-20401",
+      "hours": 7.5,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10000342",
+      "date": "2026-07-16",
+      "deviceId": "D-20401",
+      "hours": 4,
+      "dose": 1.1
+    },
+    {
+      "pernr": "10000342",
+      "date": "2026-08-20",
+      "deviceId": "D-20401",
+      "hours": 1,
+      "dose": 0.3
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-10-08",
+      "deviceId": "D-20402",
+      "hours": 7.5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-10-24",
+      "deviceId": "D-20402",
+      "hours": 7,
+      "dose": 16.3
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-10-29",
+      "deviceId": "D-20402",
+      "hours": 6,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-11-04",
+      "deviceId": "D-20402",
+      "hours": 8,
+      "dose": 28.2
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-11-06",
+      "deviceId": "D-20402",
+      "hours": 4.5,
+      "dose": 12.9
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-12-01",
+      "deviceId": "D-20402",
+      "hours": 7.5,
+      "dose": 12.7
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-12-10",
+      "deviceId": "D-20402",
+      "hours": 7,
+      "dose": 20.5
+    },
+    {
+      "pernr": "10001207",
+      "date": "2025-12-12",
+      "deviceId": "D-20402",
+      "hours": 1.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-01-08",
+      "deviceId": "D-20402",
+      "hours": 2.5,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-01-22",
+      "deviceId": "D-20402",
+      "hours": 8,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-02-05",
+      "deviceId": "D-20402",
+      "hours": 2.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-03-09",
+      "deviceId": "D-20402",
+      "hours": 4.5,
+      "dose": 13.9
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-05-07",
+      "deviceId": "D-20402",
+      "hours": 1,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-05-26",
+      "deviceId": "D-20402",
+      "hours": 2.5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-06-05",
+      "deviceId": "D-20402",
+      "hours": 2.5,
+      "dose": 5.2
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-07-02",
+      "deviceId": "D-20402",
+      "hours": 4,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-07-06",
+      "deviceId": "D-20402",
+      "hours": 6.5,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-07-13",
+      "deviceId": "D-20402",
+      "hours": 1,
+      "dose": 0.8
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-07-24",
+      "deviceId": "D-20402",
+      "hours": 8,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-07-29",
+      "deviceId": "D-20402",
+      "hours": 4.5,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-09-21",
+      "deviceId": "D-20402",
+      "hours": 7,
+      "dose": 14.9
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-09-30",
+      "deviceId": "D-20402",
+      "hours": 8,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-10-09",
+      "deviceId": "D-20402",
+      "hours": 2.5,
+      "dose": 7.6
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-10-20",
+      "deviceId": "D-20402",
+      "hours": 7.5,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-10-27",
+      "deviceId": "D-20402",
+      "hours": 4,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-11-03",
+      "deviceId": "D-20402",
+      "hours": 2,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10001207",
+      "date": "2026-11-19",
+      "deviceId": "D-20402",
+      "hours": 6,
+      "dose": 8.6
+    },
+    {
+      "pernr": "10001455",
+      "date": "2025-10-03",
+      "deviceId": "D-20403",
+      "hours": 2,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10001455",
+      "date": "2025-10-10",
+      "deviceId": "D-20403",
+      "hours": 3.5,
+      "dose": 12.1
+    },
+    {
+      "pernr": "10001455",
+      "date": "2025-10-17",
+      "deviceId": "D-20403",
+      "hours": 2.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10001455",
+      "date": "2025-12-10",
+      "deviceId": "D-20403",
+      "hours": 1,
+      "dose": 3
+    },
+    {
+      "pernr": "10001455",
+      "date": "2025-12-29",
+      "deviceId": "D-20403",
+      "hours": 6.5,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-01-05",
+      "deviceId": "D-20403",
+      "hours": 8,
+      "dose": 26.8
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-01-14",
+      "deviceId": "D-20403",
+      "hours": 1.5,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-01-16",
+      "deviceId": "D-20403",
+      "hours": 6,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-01-19",
+      "deviceId": "D-20403",
+      "hours": 2,
+      "dose": 4
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-01-23",
+      "deviceId": "D-20403",
+      "hours": 6,
+      "dose": 14.3
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-02-02",
+      "deviceId": "D-20403",
+      "hours": 4.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-02-13",
+      "deviceId": "D-20403",
+      "hours": 2,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-03-06",
+      "deviceId": "D-20403",
+      "hours": 1.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-03-25",
+      "deviceId": "D-20403",
+      "hours": 5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-05-04",
+      "deviceId": "D-20403",
+      "hours": 5.5,
+      "dose": 14.7
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-05-20",
+      "deviceId": "D-20403",
+      "hours": 1.5,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-06-03",
+      "deviceId": "D-20403",
+      "hours": 4.5,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-06-10",
+      "deviceId": "D-20403",
+      "hours": 1.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-06-22",
+      "deviceId": "D-20403",
+      "hours": 1.5,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-07-06",
+      "deviceId": "D-20403",
+      "hours": 5,
+      "dose": 11.8
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-07-14",
+      "deviceId": "D-20403",
+      "hours": 4.5,
+      "dose": 10.4
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-07-24",
+      "deviceId": "D-20403",
+      "hours": 2,
+      "dose": 3
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-08-07",
+      "deviceId": "D-20403",
+      "hours": 1.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-08-13",
+      "deviceId": "D-20403",
+      "hours": 3.5,
+      "dose": 12.5
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-08-26",
+      "deviceId": "D-20403",
+      "hours": 5.5,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-09-30",
+      "deviceId": "D-20403",
+      "hours": 5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10001455",
+      "date": "2026-10-09",
+      "deviceId": "D-20403",
+      "hours": 8,
+      "dose": 12.5
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-10-03",
+      "deviceId": "D-20404",
+      "hours": 3,
+      "dose": 7.2
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-10-08",
+      "deviceId": "D-20404",
+      "hours": 1.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-10-17",
+      "deviceId": "D-20404",
+      "hours": 1,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-10-20",
+      "deviceId": "D-20404",
+      "hours": 3,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-11-07",
+      "deviceId": "D-20404",
+      "hours": 5.5,
+      "dose": 17.6
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-11-11",
+      "deviceId": "D-20404",
+      "hours": 5,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10001693",
+      "date": "2025-12-01",
+      "deviceId": "D-20404",
+      "hours": 4.5,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-01-29",
+      "deviceId": "D-20404",
+      "hours": 7,
+      "dose": 20.2
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-02-20",
+      "deviceId": "D-20404",
+      "hours": 3,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-02-26",
+      "deviceId": "D-20404",
+      "hours": 1.5,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-03-06",
+      "deviceId": "D-20404",
+      "hours": 1.5,
+      "dose": 4.4
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-03-17",
+      "deviceId": "D-20404",
+      "hours": 4,
+      "dose": 6
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-03-18",
+      "deviceId": "D-20404",
+      "hours": 6.5,
+      "dose": 15.1
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-03-24",
+      "deviceId": "D-20404",
+      "hours": 7,
+      "dose": 10.4
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-04-10",
+      "deviceId": "D-20404",
+      "hours": 4,
+      "dose": 5.6
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-04-28",
+      "deviceId": "D-20404",
+      "hours": 4,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-05-08",
+      "deviceId": "D-20404",
+      "hours": 4,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-05-11",
+      "deviceId": "D-20404",
+      "hours": 6.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-05-12",
+      "deviceId": "D-20404",
+      "hours": 3.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-05-19",
+      "deviceId": "D-20404",
+      "hours": 2,
+      "dose": 2
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-06-04",
+      "deviceId": "D-20404",
+      "hours": 1.5,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-06-11",
+      "deviceId": "D-20404",
+      "hours": 6.5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-06-15",
+      "deviceId": "D-20404",
+      "hours": 3.5,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-07-15",
+      "deviceId": "D-20404",
+      "hours": 7,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-07-27",
+      "deviceId": "D-20404",
+      "hours": 4,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-07-28",
+      "deviceId": "D-20404",
+      "hours": 1,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-07-29",
+      "deviceId": "D-20404",
+      "hours": 7,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-08-10",
+      "deviceId": "D-20404",
+      "hours": 5,
+      "dose": 13.7
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-08-27",
+      "deviceId": "D-20404",
+      "hours": 4.5,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-08-31",
+      "deviceId": "D-20404",
+      "hours": 3,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-09-09",
+      "deviceId": "D-20404",
+      "hours": 5,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-10-16",
+      "deviceId": "D-20404",
+      "hours": 4,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10001693",
+      "date": "2026-10-23",
+      "deviceId": "D-20404",
+      "hours": 3,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10010482",
+      "date": "2025-11-06",
+      "deviceId": "D-20405",
+      "hours": 8,
+      "dose": 13
+    },
+    {
+      "pernr": "10010482",
+      "date": "2025-11-07",
+      "deviceId": "D-20405",
+      "hours": 3,
+      "dose": 5.2
+    },
+    {
+      "pernr": "10010482",
+      "date": "2025-12-29",
+      "deviceId": "D-20405",
+      "hours": 1.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-03-13",
+      "deviceId": "D-20405",
+      "hours": 1.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-03-18",
+      "deviceId": "D-20405",
+      "hours": 6.5,
+      "dose": 21.6
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-03-20",
+      "deviceId": "D-20405",
+      "hours": 5.5,
+      "dose": 18.3
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-04-23",
+      "deviceId": "D-20405",
+      "hours": 7,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-04-29",
+      "deviceId": "D-20405",
+      "hours": 2,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-06-09",
+      "deviceId": "D-20405",
+      "hours": 7,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-06-18",
+      "deviceId": "D-20405",
+      "hours": 2.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-06-19",
+      "deviceId": "D-20405",
+      "hours": 2.5,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-06-30",
+      "deviceId": "D-20405",
+      "hours": 2,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-07-03",
+      "deviceId": "D-20405",
+      "hours": 3.5,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-07-20",
+      "deviceId": "D-20405",
+      "hours": 4,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-07-31",
+      "deviceId": "D-20405",
+      "hours": 4.5,
+      "dose": 14.9
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-08-06",
+      "deviceId": "D-20405",
+      "hours": 4.5,
+      "dose": 13.8
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-08-14",
+      "deviceId": "D-20405",
+      "hours": 6.5,
+      "dose": 20.8
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-10-20",
+      "deviceId": "D-20405",
+      "hours": 3,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-10-22",
+      "deviceId": "D-20405",
+      "hours": 4.5,
+      "dose": 13.6
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-10-26",
+      "deviceId": "D-20405",
+      "hours": 6.5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-11-04",
+      "deviceId": "D-20405",
+      "hours": 7,
+      "dose": 14.2
+    },
+    {
+      "pernr": "10010482",
+      "date": "2026-11-05",
+      "deviceId": "D-20405",
+      "hours": 3.5,
+      "dose": 8.3
+    },
+    {
+      "pernr": "10010931",
+      "date": "2025-10-17",
+      "deviceId": "D-20406",
+      "hours": 4,
+      "dose": 12.9
+    },
+    {
+      "pernr": "10010931",
+      "date": "2025-10-22",
+      "deviceId": "D-20406",
+      "hours": 4,
+      "dose": 13
+    },
+    {
+      "pernr": "10010931",
+      "date": "2025-11-12",
+      "deviceId": "D-20406",
+      "hours": 8,
+      "dose": 9.6
+    },
+    {
+      "pernr": "10010931",
+      "date": "2025-11-18",
+      "deviceId": "D-20406",
+      "hours": 1,
+      "dose": 0.8
+    },
+    {
+      "pernr": "10010931",
+      "date": "2025-12-05",
+      "deviceId": "D-20406",
+      "hours": 5,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-01-13",
+      "deviceId": "D-20406",
+      "hours": 6,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-01-16",
+      "deviceId": "D-20406",
+      "hours": 3.5,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-01-22",
+      "deviceId": "D-20406",
+      "hours": 7.5,
+      "dose": 14.4
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-02-04",
+      "deviceId": "D-20406",
+      "hours": 7.5,
+      "dose": 26.6
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-02-13",
+      "deviceId": "D-20406",
+      "hours": 5,
+      "dose": 10.7
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-03-02",
+      "deviceId": "D-20406",
+      "hours": 2,
+      "dose": 7
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-03-04",
+      "deviceId": "D-20406",
+      "hours": 2.5,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-03-27",
+      "deviceId": "D-20406",
+      "hours": 6.5,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-04-17",
+      "deviceId": "D-20406",
+      "hours": 5,
+      "dose": 16.9
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-04-21",
+      "deviceId": "D-20406",
+      "hours": 7.5,
+      "dose": 8
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-04-27",
+      "deviceId": "D-20406",
+      "hours": 2,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-05-04",
+      "deviceId": "D-20406",
+      "hours": 7.5,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-05-29",
+      "deviceId": "D-20406",
+      "hours": 6,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-06-08",
+      "deviceId": "D-20406",
+      "hours": 1,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-06-18",
+      "deviceId": "D-20406",
+      "hours": 6,
+      "dose": 12.1
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-07-09",
+      "deviceId": "D-20406",
+      "hours": 1.5,
+      "dose": 1.2
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-08-06",
+      "deviceId": "D-20406",
+      "hours": 4,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-08-17",
+      "deviceId": "D-20406",
+      "hours": 4.5,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-09-04",
+      "deviceId": "D-20406",
+      "hours": 2,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-09-14",
+      "deviceId": "D-20406",
+      "hours": 1,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-10-08",
+      "deviceId": "D-20406",
+      "hours": 3,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-10-22",
+      "deviceId": "D-20406",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-11-03",
+      "deviceId": "D-20406",
+      "hours": 7.5,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-11-10",
+      "deviceId": "D-20406",
+      "hours": 5.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-11-13",
+      "deviceId": "D-20406",
+      "hours": 5.5,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10010931",
+      "date": "2026-11-19",
+      "deviceId": "D-20406",
+      "hours": 4,
+      "dose": 12
+    },
+    {
+      "pernr": "10011374",
+      "date": "2025-10-24",
+      "deviceId": "D-20407",
+      "hours": 8,
+      "dose": 26.9
+    },
+    {
+      "pernr": "10011374",
+      "date": "2025-10-27",
+      "deviceId": "D-20407",
+      "hours": 2.5,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10011374",
+      "date": "2025-11-17",
+      "deviceId": "D-20407",
+      "hours": 6.5,
+      "dose": 19.1
+    },
+    {
+      "pernr": "10011374",
+      "date": "2025-11-27",
+      "deviceId": "D-20407",
+      "hours": 4,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10011374",
+      "date": "2025-12-08",
+      "deviceId": "D-20407",
+      "hours": 3.5,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10011374",
+      "date": "2025-12-18",
+      "deviceId": "D-20407",
+      "hours": 7.5,
+      "dose": 11.3
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-01-02",
+      "deviceId": "D-20407",
+      "hours": 5,
+      "dose": 35.4
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-01-26",
+      "deviceId": "D-20407",
+      "hours": 8,
+      "dose": 23.9
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-01-29",
+      "deviceId": "D-20407",
+      "hours": 6,
+      "dose": 35.9
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-02-04",
+      "deviceId": "D-20407",
+      "hours": 2.5,
+      "dose": 17.9
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-03-09",
+      "deviceId": "D-20407",
+      "hours": 2.5,
+      "dose": 20.3
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-03-11",
+      "deviceId": "D-20407",
+      "hours": 1,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-03-19",
+      "deviceId": "D-20407",
+      "hours": 6.5,
+      "dose": 16.1
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-03-26",
+      "deviceId": "D-20407",
+      "hours": 1.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-04-02",
+      "deviceId": "D-20407",
+      "hours": 4,
+      "dose": 23.4
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-04-13",
+      "deviceId": "D-20407",
+      "hours": 1.5,
+      "dose": 8.6
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-04-14",
+      "deviceId": "D-20407",
+      "hours": 7,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-04-15",
+      "deviceId": "D-20407",
+      "hours": 6,
+      "dose": 25.5
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-04-27",
+      "deviceId": "D-20407",
+      "hours": 6,
+      "dose": 22.4
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-07-01",
+      "deviceId": "D-20407",
+      "hours": 2.5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-07-09",
+      "deviceId": "D-20407",
+      "hours": 2.5,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10011374",
+      "date": "2026-08-20",
+      "deviceId": "D-20407",
+      "hours": 1.5,
+      "dose": 4.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-10-01",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 15.7
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-10-14",
+      "deviceId": "D-20408",
+      "hours": 4.5,
+      "dose": 14.3
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-10-28",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 18.5
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-12-12",
+      "deviceId": "D-20408",
+      "hours": 3,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-12-15",
+      "deviceId": "D-20408",
+      "hours": 7.5,
+      "dose": 13.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-12-17",
+      "deviceId": "D-20408",
+      "hours": 1,
+      "dose": 0.5
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-12-18",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10020917",
+      "date": "2025-12-26",
+      "deviceId": "D-20408",
+      "hours": 7.5,
+      "dose": 15
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-01-21",
+      "deviceId": "D-20408",
+      "hours": 1,
+      "dose": 3.2
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-01-30",
+      "deviceId": "D-20408",
+      "hours": 4,
+      "dose": 13.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-02-10",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 11.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-03-05",
+      "deviceId": "D-20408",
+      "hours": 7,
+      "dose": 20.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-03-09",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-03-12",
+      "deviceId": "D-20408",
+      "hours": 2,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-03-18",
+      "deviceId": "D-20408",
+      "hours": 4.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-03-30",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-04-23",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 15.3
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-04-30",
+      "deviceId": "D-20408",
+      "hours": 2,
+      "dose": 0.8
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-05-01",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 19.7
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-05-19",
+      "deviceId": "D-20408",
+      "hours": 7,
+      "dose": 19.7
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-06-02",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-06-05",
+      "deviceId": "D-20408",
+      "hours": 5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-06-08",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 19.7
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-06-11",
+      "deviceId": "D-20408",
+      "hours": 4,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-06-24",
+      "deviceId": "D-20408",
+      "hours": 4.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-06-30",
+      "deviceId": "D-20408",
+      "hours": 7,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-07-02",
+      "deviceId": "D-20408",
+      "hours": 3,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-07-22",
+      "deviceId": "D-20408",
+      "hours": 2,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-07-30",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 9.2
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-07-31",
+      "deviceId": "D-20408",
+      "hours": 6,
+      "dose": 17.6
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-08-12",
+      "deviceId": "D-20408",
+      "hours": 7.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-09-11",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 14.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-09-14",
+      "deviceId": "D-20408",
+      "hours": 4,
+      "dose": 13
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-09-16",
+      "deviceId": "D-20408",
+      "hours": 1,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-09-22",
+      "deviceId": "D-20408",
+      "hours": 2,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-09-28",
+      "deviceId": "D-20408",
+      "hours": 2,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-10-02",
+      "deviceId": "D-20408",
+      "hours": 6.5,
+      "dose": 21.7
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-10-09",
+      "deviceId": "D-20408",
+      "hours": 3.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-10-12",
+      "deviceId": "D-20408",
+      "hours": 8,
+      "dose": 24.2
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-10-28",
+      "deviceId": "D-20408",
+      "hours": 4,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10020917",
+      "date": "2026-11-06",
+      "deviceId": "D-20408",
+      "hours": 5.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10031206",
+      "date": "2025-10-01",
+      "deviceId": "D-20409",
+      "hours": 7.5,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10031206",
+      "date": "2025-11-24",
+      "deviceId": "D-20409",
+      "hours": 6.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10031206",
+      "date": "2025-12-16",
+      "deviceId": "D-20409",
+      "hours": 7,
+      "dose": 15.2
+    },
+    {
+      "pernr": "10031206",
+      "date": "2025-12-19",
+      "deviceId": "D-20409",
+      "hours": 8,
+      "dose": 21.4
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-01-06",
+      "deviceId": "D-20409",
+      "hours": 2.5,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-01-13",
+      "deviceId": "D-20409",
+      "hours": 5.5,
+      "dose": 18.6
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-01-21",
+      "deviceId": "D-20409",
+      "hours": 6.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-02-12",
+      "deviceId": "D-20409",
+      "hours": 2,
+      "dose": 4.9
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-02-16",
+      "deviceId": "D-20409",
+      "hours": 4,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-03-03",
+      "deviceId": "D-20409",
+      "hours": 4,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-03-31",
+      "deviceId": "D-20409",
+      "hours": 4,
+      "dose": 7.6
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-04-10",
+      "deviceId": "D-20409",
+      "hours": 6.5,
+      "dose": 19.5
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-04-23",
+      "deviceId": "D-20409",
+      "hours": 4.5,
+      "dose": 8.9
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-04-28",
+      "deviceId": "D-20409",
+      "hours": 5.5,
+      "dose": 16.4
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-04-30",
+      "deviceId": "D-20409",
+      "hours": 5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-05-05",
+      "deviceId": "D-20409",
+      "hours": 6.5,
+      "dose": 20.2
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-05-14",
+      "deviceId": "D-20409",
+      "hours": 7,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-05-18",
+      "deviceId": "D-20409",
+      "hours": 8,
+      "dose": 28.8
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-05-26",
+      "deviceId": "D-20409",
+      "hours": 6,
+      "dose": 16.2
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-06-26",
+      "deviceId": "D-20409",
+      "hours": 2,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-07-27",
+      "deviceId": "D-20409",
+      "hours": 7,
+      "dose": 6
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-08-04",
+      "deviceId": "D-20409",
+      "hours": 1,
+      "dose": 1.6
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-08-13",
+      "deviceId": "D-20409",
+      "hours": 3,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-08-25",
+      "deviceId": "D-20409",
+      "hours": 7,
+      "dose": 20.7
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-09-02",
+      "deviceId": "D-20409",
+      "hours": 3.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-09-07",
+      "deviceId": "D-20409",
+      "hours": 3.5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-10-05",
+      "deviceId": "D-20409",
+      "hours": 2.5,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10031206",
+      "date": "2026-11-11",
+      "deviceId": "D-20409",
+      "hours": 4,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2025-10-13",
+      "deviceId": "D-20410",
+      "hours": 4,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2025-10-24",
+      "deviceId": "D-20410",
+      "hours": 6,
+      "dose": 13.6
+    },
+    {
+      "pernr": "10021688",
+      "date": "2025-10-27",
+      "deviceId": "D-20410",
+      "hours": 3,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2025-11-19",
+      "deviceId": "D-20410",
+      "hours": 2,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10021688",
+      "date": "2025-12-03",
+      "deviceId": "D-20410",
+      "hours": 5,
+      "dose": 11.8
+    },
+    {
+      "pernr": "10021688",
+      "date": "2025-12-31",
+      "deviceId": "D-20410",
+      "hours": 3,
+      "dose": 4.4
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-01-08",
+      "deviceId": "D-20410",
+      "hours": 1,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-01-12",
+      "deviceId": "D-20410",
+      "hours": 7,
+      "dose": 25
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-01-26",
+      "deviceId": "D-20410",
+      "hours": 7.5,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-02-24",
+      "deviceId": "D-20410",
+      "hours": 1.5,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-03-04",
+      "deviceId": "D-20410",
+      "hours": 5.5,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-03-11",
+      "deviceId": "D-20410",
+      "hours": 4,
+      "dose": 11.3
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-03-18",
+      "deviceId": "D-20410",
+      "hours": 7,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-03-24",
+      "deviceId": "D-20410",
+      "hours": 5.5,
+      "dose": 19.1
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-04-02",
+      "deviceId": "D-20410",
+      "hours": 1,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-04-09",
+      "deviceId": "D-20410",
+      "hours": 5,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-04-28",
+      "deviceId": "D-20410",
+      "hours": 4,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-05-04",
+      "deviceId": "D-20410",
+      "hours": 2.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-05-22",
+      "deviceId": "D-20410",
+      "hours": 5.5,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-05-26",
+      "deviceId": "D-20410",
+      "hours": 7.5,
+      "dose": 11.4
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-05-27",
+      "deviceId": "D-20410",
+      "hours": 3.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-06-09",
+      "deviceId": "D-20410",
+      "hours": 1.5,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-06-16",
+      "deviceId": "D-20410",
+      "hours": 7.5,
+      "dose": 25.5
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-07-02",
+      "deviceId": "D-20410",
+      "hours": 3.5,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-07-17",
+      "deviceId": "D-20410",
+      "hours": 3.5,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-08-06",
+      "deviceId": "D-20410",
+      "hours": 4.5,
+      "dose": 15.4
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-08-12",
+      "deviceId": "D-20410",
+      "hours": 6,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-08-20",
+      "deviceId": "D-20410",
+      "hours": 1,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-08-24",
+      "deviceId": "D-20410",
+      "hours": 1.5,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-09-07",
+      "deviceId": "D-20410",
+      "hours": 8,
+      "dose": 17
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-09-16",
+      "deviceId": "D-20410",
+      "hours": 5.5,
+      "dose": 16.4
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-09-30",
+      "deviceId": "D-20410",
+      "hours": 1,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-10-08",
+      "deviceId": "D-20410",
+      "hours": 2.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-10-15",
+      "deviceId": "D-20410",
+      "hours": 1.5,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-10-21",
+      "deviceId": "D-20410",
+      "hours": 4,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-10-22",
+      "deviceId": "D-20410",
+      "hours": 3,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-10-28",
+      "deviceId": "D-20410",
+      "hours": 4.5,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-11-04",
+      "deviceId": "D-20410",
+      "hours": 6.5,
+      "dose": 16.3
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-11-06",
+      "deviceId": "D-20410",
+      "hours": 2.5,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10021688",
+      "date": "2026-11-12",
+      "deviceId": "D-20410",
+      "hours": 1,
+      "dose": 3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2025-10-15",
+      "deviceId": "D-20411",
+      "hours": 5,
+      "dose": 13.9
+    },
+    {
+      "pernr": "10041530",
+      "date": "2025-11-14",
+      "deviceId": "D-20411",
+      "hours": 5,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10041530",
+      "date": "2025-11-27",
+      "deviceId": "D-20411",
+      "hours": 3,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10041530",
+      "date": "2025-12-02",
+      "deviceId": "D-20411",
+      "hours": 7.5,
+      "dose": 19.8
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-01-09",
+      "deviceId": "D-20411",
+      "hours": 2.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-01-20",
+      "deviceId": "D-20411",
+      "hours": 7,
+      "dose": 11
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-01-29",
+      "deviceId": "D-20411",
+      "hours": 7,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-02-23",
+      "deviceId": "D-20411",
+      "hours": 8,
+      "dose": 16.1
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-03-03",
+      "deviceId": "D-20411",
+      "hours": 7.5,
+      "dose": 11.3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-04-01",
+      "deviceId": "D-20411",
+      "hours": 5,
+      "dose": 14.3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-04-09",
+      "deviceId": "D-20411",
+      "hours": 1.5,
+      "dose": 3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-04-17",
+      "deviceId": "D-20411",
+      "hours": 7.5,
+      "dose": 22.4
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-04-28",
+      "deviceId": "D-20411",
+      "hours": 7.5,
+      "dose": 15
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-05-12",
+      "deviceId": "D-20411",
+      "hours": 1.5,
+      "dose": 3.2
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-05-18",
+      "deviceId": "D-20411",
+      "hours": 7,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-05-19",
+      "deviceId": "D-20411",
+      "hours": 3.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-05-27",
+      "deviceId": "D-20411",
+      "hours": 6,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-06-04",
+      "deviceId": "D-20411",
+      "hours": 1.5,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-06-23",
+      "deviceId": "D-20411",
+      "hours": 4.5,
+      "dose": 9.3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-06-25",
+      "deviceId": "D-20411",
+      "hours": 4.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-07-03",
+      "deviceId": "D-20411",
+      "hours": 2,
+      "dose": 1.1
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-08-24",
+      "deviceId": "D-20411",
+      "hours": 6.5,
+      "dose": 12.9
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-08-26",
+      "deviceId": "D-20411",
+      "hours": 8,
+      "dose": 19.6
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-08-27",
+      "deviceId": "D-20411",
+      "hours": 7,
+      "dose": 17.2
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-09-30",
+      "deviceId": "D-20411",
+      "hours": 6.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-10-05",
+      "deviceId": "D-20411",
+      "hours": 5.5,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-10-19",
+      "deviceId": "D-20411",
+      "hours": 6.5,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-10-22",
+      "deviceId": "D-20411",
+      "hours": 5.5,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-10-23",
+      "deviceId": "D-20411",
+      "hours": 4.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-10-30",
+      "deviceId": "D-20411",
+      "hours": 6,
+      "dose": 13.3
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-11-05",
+      "deviceId": "D-20411",
+      "hours": 5.5,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10041530",
+      "date": "2026-11-18",
+      "deviceId": "D-20411",
+      "hours": 6,
+      "dose": 13.1
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-10-01",
+      "deviceId": "D-20412",
+      "hours": 1.5,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-10-02",
+      "deviceId": "D-20412",
+      "hours": 3,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-10-07",
+      "deviceId": "D-20412",
+      "hours": 5.5,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-10-13",
+      "deviceId": "D-20412",
+      "hours": 6.5,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-10-17",
+      "deviceId": "D-20412",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-10-29",
+      "deviceId": "D-20412",
+      "hours": 1.5,
+      "dose": 4.2
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-11-07",
+      "deviceId": "D-20412",
+      "hours": 2.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-11-17",
+      "deviceId": "D-20412",
+      "hours": 4,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-12-16",
+      "deviceId": "D-20412",
+      "hours": 3.5,
+      "dose": 11.3
+    },
+    {
+      "pernr": "10052274",
+      "date": "2025-12-18",
+      "deviceId": "D-20412",
+      "hours": 7,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-01-20",
+      "deviceId": "D-20412",
+      "hours": 1,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-02-10",
+      "deviceId": "D-20412",
+      "hours": 8,
+      "dose": 23.4
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-02-11",
+      "deviceId": "D-20412",
+      "hours": 5.5,
+      "dose": 7.2
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-02-25",
+      "deviceId": "D-20412",
+      "hours": 5.5,
+      "dose": 12.9
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-03-19",
+      "deviceId": "D-20412",
+      "hours": 2.5,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-03-23",
+      "deviceId": "D-20412",
+      "hours": 2.5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-03-25",
+      "deviceId": "D-20412",
+      "hours": 6,
+      "dose": 12.5
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-03-30",
+      "deviceId": "D-20412",
+      "hours": 3.5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-04-21",
+      "deviceId": "D-20412",
+      "hours": 3,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-05-19",
+      "deviceId": "D-20412",
+      "hours": 4.5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-05-20",
+      "deviceId": "D-20412",
+      "hours": 4.5,
+      "dose": 5.6
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-06-05",
+      "deviceId": "D-20412",
+      "hours": 7.5,
+      "dose": 23.8
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-06-10",
+      "deviceId": "D-20412",
+      "hours": 7.5,
+      "dose": 24.3
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-06-11",
+      "deviceId": "D-20412",
+      "hours": 4,
+      "dose": 13.8
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-06-23",
+      "deviceId": "D-20412",
+      "hours": 6.5,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-07-28",
+      "deviceId": "D-20412",
+      "hours": 6,
+      "dose": 16.8
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-08-17",
+      "deviceId": "D-20412",
+      "hours": 6.5,
+      "dose": 9.6
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-08-31",
+      "deviceId": "D-20412",
+      "hours": 3,
+      "dose": 9.3
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-09-11",
+      "deviceId": "D-20412",
+      "hours": 7,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-10-23",
+      "deviceId": "D-20412",
+      "hours": 3.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-11-02",
+      "deviceId": "D-20412",
+      "hours": 1.5,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10052274",
+      "date": "2026-11-09",
+      "deviceId": "D-20412",
+      "hours": 2.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10001822",
+      "date": "2025-10-03",
+      "deviceId": "D-20413",
+      "hours": 6,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10001822",
+      "date": "2025-10-08",
+      "deviceId": "D-20413",
+      "hours": 1.5,
+      "dose": 1.6
+    },
+    {
+      "pernr": "10001822",
+      "date": "2025-11-20",
+      "deviceId": "D-20413",
+      "hours": 3,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-01-02",
+      "deviceId": "D-20413",
+      "hours": 4,
+      "dose": 13.3
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-01-21",
+      "deviceId": "D-20413",
+      "hours": 5.5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-02-16",
+      "deviceId": "D-20413",
+      "hours": 3.5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-03-13",
+      "deviceId": "D-20413",
+      "hours": 6.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-03-26",
+      "deviceId": "D-20413",
+      "hours": 5.5,
+      "dose": 14
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-04-03",
+      "deviceId": "D-20413",
+      "hours": 2,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-04-16",
+      "deviceId": "D-20413",
+      "hours": 3,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-04-17",
+      "deviceId": "D-20413",
+      "hours": 7,
+      "dose": 22.7
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-05-05",
+      "deviceId": "D-20413",
+      "hours": 6.5,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-05-06",
+      "deviceId": "D-20413",
+      "hours": 2,
+      "dose": 6
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-05-13",
+      "deviceId": "D-20413",
+      "hours": 3.5,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-05-20",
+      "deviceId": "D-20413",
+      "hours": 5.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-06-05",
+      "deviceId": "D-20413",
+      "hours": 3.5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-06-08",
+      "deviceId": "D-20413",
+      "hours": 4.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-07-01",
+      "deviceId": "D-20413",
+      "hours": 5,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-07-09",
+      "deviceId": "D-20413",
+      "hours": 3.5,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-07-16",
+      "deviceId": "D-20413",
+      "hours": 3.5,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-07-29",
+      "deviceId": "D-20413",
+      "hours": 2.5,
+      "dose": 1.1
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-08-17",
+      "deviceId": "D-20413",
+      "hours": 5,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-09-14",
+      "deviceId": "D-20413",
+      "hours": 1,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-09-18",
+      "deviceId": "D-20413",
+      "hours": 4,
+      "dose": 11.3
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-10-05",
+      "deviceId": "D-20413",
+      "hours": 3,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-10-15",
+      "deviceId": "D-20413",
+      "hours": 4.5,
+      "dose": 15.2
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-11-09",
+      "deviceId": "D-20413",
+      "hours": 7,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10001822",
+      "date": "2026-11-16",
+      "deviceId": "D-20413",
+      "hours": 3.5,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-10-09",
+      "deviceId": "D-20414",
+      "hours": 5,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-10-20",
+      "deviceId": "D-20414",
+      "hours": 6,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-10-23",
+      "deviceId": "D-20414",
+      "hours": 5,
+      "dose": 7
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-10-29",
+      "deviceId": "D-20414",
+      "hours": 7.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-11-06",
+      "deviceId": "D-20414",
+      "hours": 1,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-11-10",
+      "deviceId": "D-20414",
+      "hours": 1.5,
+      "dose": 4.9
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-11-13",
+      "deviceId": "D-20414",
+      "hours": 6,
+      "dose": 19.4
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-11-18",
+      "deviceId": "D-20414",
+      "hours": 8,
+      "dose": 26.8
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-12-02",
+      "deviceId": "D-20414",
+      "hours": 3.5,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-12-25",
+      "deviceId": "D-20414",
+      "hours": 6,
+      "dose": 21.4
+    },
+    {
+      "pernr": "10001964",
+      "date": "2025-12-31",
+      "deviceId": "D-20414",
+      "hours": 6.5,
+      "dose": 18.7
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-01-02",
+      "deviceId": "D-20414",
+      "hours": 2,
+      "dose": 4.3
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-01-21",
+      "deviceId": "D-20414",
+      "hours": 3.5,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-01-28",
+      "deviceId": "D-20414",
+      "hours": 1.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-03-17",
+      "deviceId": "D-20414",
+      "hours": 1.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-03-25",
+      "deviceId": "D-20414",
+      "hours": 6.5,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-03-30",
+      "deviceId": "D-20414",
+      "hours": 3,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-04-06",
+      "deviceId": "D-20414",
+      "hours": 2,
+      "dose": 5.5
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-04-16",
+      "deviceId": "D-20414",
+      "hours": 3,
+      "dose": 9
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-04-24",
+      "deviceId": "D-20414",
+      "hours": 7.5,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-05-25",
+      "deviceId": "D-20414",
+      "hours": 5.5,
+      "dose": 13.5
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-06-08",
+      "deviceId": "D-20414",
+      "hours": 5.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-06-16",
+      "deviceId": "D-20414",
+      "hours": 4,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-07-01",
+      "deviceId": "D-20414",
+      "hours": 6.5,
+      "dose": 16.5
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-07-03",
+      "deviceId": "D-20414",
+      "hours": 3.5,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-08-10",
+      "deviceId": "D-20414",
+      "hours": 5.5,
+      "dose": 10.7
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-08-18",
+      "deviceId": "D-20414",
+      "hours": 1.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-08-28",
+      "deviceId": "D-20414",
+      "hours": 3.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-09-01",
+      "deviceId": "D-20414",
+      "hours": 5,
+      "dose": 15
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-09-22",
+      "deviceId": "D-20414",
+      "hours": 3,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-10-06",
+      "deviceId": "D-20414",
+      "hours": 2.5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10001964",
+      "date": "2026-10-16",
+      "deviceId": "D-20414",
+      "hours": 5,
+      "dose": 17.2
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-10-07",
+      "deviceId": "D-20415",
+      "hours": 3.5,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-10-15",
+      "deviceId": "D-20415",
+      "hours": 1.5,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-10-24",
+      "deviceId": "D-20415",
+      "hours": 8,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-11-10",
+      "deviceId": "D-20415",
+      "hours": 3,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-12-12",
+      "deviceId": "D-20415",
+      "hours": 5,
+      "dose": 12.7
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-12-15",
+      "deviceId": "D-20415",
+      "hours": 1.5,
+      "dose": 0.6
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-12-17",
+      "deviceId": "D-20415",
+      "hours": 1.5,
+      "dose": 1.2
+    },
+    {
+      "pernr": "10060000",
+      "date": "2025-12-30",
+      "deviceId": "D-20415",
+      "hours": 6,
+      "dose": 12
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-02-11",
+      "deviceId": "D-20415",
+      "hours": 6,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-03-11",
+      "deviceId": "D-20415",
+      "hours": 6,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-03-12",
+      "deviceId": "D-20415",
+      "hours": 6,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-05-19",
+      "deviceId": "D-20415",
+      "hours": 3,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-05-26",
+      "deviceId": "D-20415",
+      "hours": 7.5,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-06-10",
+      "deviceId": "D-20415",
+      "hours": 4.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-07-09",
+      "deviceId": "D-20415",
+      "hours": 1.5,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-07-17",
+      "deviceId": "D-20415",
+      "hours": 4,
+      "dose": 12
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-08-03",
+      "deviceId": "D-20415",
+      "hours": 4,
+      "dose": 10.3
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-08-18",
+      "deviceId": "D-20415",
+      "hours": 5.5,
+      "dose": 18.7
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-08-19",
+      "deviceId": "D-20415",
+      "hours": 1,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-08-21",
+      "deviceId": "D-20415",
+      "hours": 1,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-10-02",
+      "deviceId": "D-20415",
+      "hours": 6.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-10-14",
+      "deviceId": "D-20415",
+      "hours": 8,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-11-03",
+      "deviceId": "D-20415",
+      "hours": 1,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-11-04",
+      "deviceId": "D-20415",
+      "hours": 5.5,
+      "dose": 11.8
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-11-11",
+      "deviceId": "D-20415",
+      "hours": 2.5,
+      "dose": 5.2
+    },
+    {
+      "pernr": "10060000",
+      "date": "2026-11-17",
+      "deviceId": "D-20415",
+      "hours": 7.5,
+      "dose": 20.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-10-22",
+      "deviceId": "D-20416",
+      "hours": 6.5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-10-24",
+      "deviceId": "D-20416",
+      "hours": 1,
+      "dose": 2.1
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-11-11",
+      "deviceId": "D-20416",
+      "hours": 4.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-11-13",
+      "deviceId": "D-20416",
+      "hours": 7.5,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-11-14",
+      "deviceId": "D-20416",
+      "hours": 6.5,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-11-17",
+      "deviceId": "D-20416",
+      "hours": 7,
+      "dose": 18.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2025-12-09",
+      "deviceId": "D-20416",
+      "hours": 8,
+      "dose": 17.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-02-13",
+      "deviceId": "D-20416",
+      "hours": 2.5,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-02-16",
+      "deviceId": "D-20416",
+      "hours": 5.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-02-18",
+      "deviceId": "D-20416",
+      "hours": 6.5,
+      "dose": 19.7
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-02-20",
+      "deviceId": "D-20416",
+      "hours": 3.5,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-03-16",
+      "deviceId": "D-20416",
+      "hours": 1.5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-03-18",
+      "deviceId": "D-20416",
+      "hours": 4,
+      "dose": 13.6
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-03-26",
+      "deviceId": "D-20416",
+      "hours": 5,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-04-10",
+      "deviceId": "D-20416",
+      "hours": 2,
+      "dose": 5.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-04-16",
+      "deviceId": "D-20416",
+      "hours": 6,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-04-17",
+      "deviceId": "D-20416",
+      "hours": 5,
+      "dose": 16.6
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-04-22",
+      "deviceId": "D-20416",
+      "hours": 3.5,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-04-28",
+      "deviceId": "D-20416",
+      "hours": 3,
+      "dose": 3
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-05-05",
+      "deviceId": "D-20416",
+      "hours": 5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-05-18",
+      "deviceId": "D-20416",
+      "hours": 4.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-06-04",
+      "deviceId": "D-20416",
+      "hours": 3,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-06-25",
+      "deviceId": "D-20416",
+      "hours": 5,
+      "dose": 11.8
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-06-26",
+      "deviceId": "D-20416",
+      "hours": 7.5,
+      "dose": 20.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-07-31",
+      "deviceId": "D-20416",
+      "hours": 2.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-08-14",
+      "deviceId": "D-20416",
+      "hours": 7.5,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-08-24",
+      "deviceId": "D-20416",
+      "hours": 1.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-09-02",
+      "deviceId": "D-20416",
+      "hours": 3,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-09-09",
+      "deviceId": "D-20416",
+      "hours": 3.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-10-01",
+      "deviceId": "D-20416",
+      "hours": 4,
+      "dose": 10.7
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-10-08",
+      "deviceId": "D-20416",
+      "hours": 3.5,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-10-23",
+      "deviceId": "D-20416",
+      "hours": 6.5,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-11-06",
+      "deviceId": "D-20416",
+      "hours": 7.5,
+      "dose": 14.5
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-11-10",
+      "deviceId": "D-20416",
+      "hours": 4.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-11-16",
+      "deviceId": "D-20416",
+      "hours": 1.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10060137",
+      "date": "2026-11-19",
+      "deviceId": "D-20416",
+      "hours": 3.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10060274",
+      "date": "2025-10-08",
+      "deviceId": "D-20417",
+      "hours": 5,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2025-11-03",
+      "deviceId": "D-20417",
+      "hours": 7.5,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2025-11-06",
+      "deviceId": "D-20417",
+      "hours": 2.5,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10060274",
+      "date": "2025-11-12",
+      "deviceId": "D-20417",
+      "hours": 4,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10060274",
+      "date": "2025-12-03",
+      "deviceId": "D-20417",
+      "hours": 6.5,
+      "dose": 15.6
+    },
+    {
+      "pernr": "10060274",
+      "date": "2025-12-31",
+      "deviceId": "D-20417",
+      "hours": 5.5,
+      "dose": 9.5
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-01-09",
+      "deviceId": "D-20417",
+      "hours": 7,
+      "dose": 18.3
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-01-26",
+      "deviceId": "D-20417",
+      "hours": 5.5,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-03-09",
+      "deviceId": "D-20417",
+      "hours": 3.5,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-03-13",
+      "deviceId": "D-20417",
+      "hours": 7,
+      "dose": 7.2
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-03-26",
+      "deviceId": "D-20417",
+      "hours": 5,
+      "dose": 10.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-04-20",
+      "deviceId": "D-20417",
+      "hours": 5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-05-04",
+      "deviceId": "D-20417",
+      "hours": 5.5,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-05-08",
+      "deviceId": "D-20417",
+      "hours": 4.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-06-01",
+      "deviceId": "D-20417",
+      "hours": 3.5,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-06-15",
+      "deviceId": "D-20417",
+      "hours": 2.5,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-06-19",
+      "deviceId": "D-20417",
+      "hours": 3,
+      "dose": 1.2
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-07-16",
+      "deviceId": "D-20417",
+      "hours": 3,
+      "dose": 7.1
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-07-30",
+      "deviceId": "D-20417",
+      "hours": 8,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-08-14",
+      "deviceId": "D-20417",
+      "hours": 7,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-08-19",
+      "deviceId": "D-20417",
+      "hours": 5.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-09-24",
+      "deviceId": "D-20417",
+      "hours": 7,
+      "dose": 13.5
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-11-02",
+      "deviceId": "D-20417",
+      "hours": 6.5,
+      "dose": 14.8
+    },
+    {
+      "pernr": "10060274",
+      "date": "2026-11-04",
+      "deviceId": "D-20417",
+      "hours": 6.5,
+      "dose": 20.4
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-10-03",
+      "deviceId": "D-20418",
+      "hours": 4.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-10-10",
+      "deviceId": "D-20418",
+      "hours": 8,
+      "dose": 10.5
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-10-13",
+      "deviceId": "D-20418",
+      "hours": 3.5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-10-15",
+      "deviceId": "D-20418",
+      "hours": 4.5,
+      "dose": 7
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-11-20",
+      "deviceId": "D-20418",
+      "hours": 4,
+      "dose": 13.3
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-11-27",
+      "deviceId": "D-20418",
+      "hours": 3.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-12-03",
+      "deviceId": "D-20418",
+      "hours": 6,
+      "dose": 20.2
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-12-16",
+      "deviceId": "D-20418",
+      "hours": 7.5,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10060411",
+      "date": "2025-12-18",
+      "deviceId": "D-20418",
+      "hours": 6.5,
+      "dose": 11.4
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-01-05",
+      "deviceId": "D-20418",
+      "hours": 8,
+      "dose": 17
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-01-16",
+      "deviceId": "D-20418",
+      "hours": 6,
+      "dose": 15.2
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-01-21",
+      "deviceId": "D-20418",
+      "hours": 2.5,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-01-30",
+      "deviceId": "D-20418",
+      "hours": 3.5,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-02-11",
+      "deviceId": "D-20418",
+      "hours": 5.5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-02-12",
+      "deviceId": "D-20418",
+      "hours": 2,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-02-24",
+      "deviceId": "D-20418",
+      "hours": 3,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-03-04",
+      "deviceId": "D-20418",
+      "hours": 5.5,
+      "dose": 13.6
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-03-16",
+      "deviceId": "D-20418",
+      "hours": 6,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-03-17",
+      "deviceId": "D-20418",
+      "hours": 5,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-03-23",
+      "deviceId": "D-20418",
+      "hours": 1,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-03-26",
+      "deviceId": "D-20418",
+      "hours": 7,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-04-03",
+      "deviceId": "D-20418",
+      "hours": 3.5,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-04-06",
+      "deviceId": "D-20418",
+      "hours": 6,
+      "dose": 21.1
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-06-02",
+      "deviceId": "D-20418",
+      "hours": 5.5,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-06-04",
+      "deviceId": "D-20418",
+      "hours": 5.5,
+      "dose": 14.3
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-06-10",
+      "deviceId": "D-20418",
+      "hours": 2.5,
+      "dose": 7.6
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-06-18",
+      "deviceId": "D-20418",
+      "hours": 6.5,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-06-23",
+      "deviceId": "D-20418",
+      "hours": 7,
+      "dose": 21.3
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-07-08",
+      "deviceId": "D-20418",
+      "hours": 1,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-07-23",
+      "deviceId": "D-20418",
+      "hours": 5,
+      "dose": 16.6
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-07-29",
+      "deviceId": "D-20418",
+      "hours": 5.5,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-07-30",
+      "deviceId": "D-20418",
+      "hours": 3.5,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-08-31",
+      "deviceId": "D-20418",
+      "hours": 3.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-09-14",
+      "deviceId": "D-20418",
+      "hours": 3,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-09-17",
+      "deviceId": "D-20418",
+      "hours": 6,
+      "dose": 16.1
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-10-29",
+      "deviceId": "D-20418",
+      "hours": 5.5,
+      "dose": 17.1
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-10-30",
+      "deviceId": "D-20418",
+      "hours": 8,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-11-13",
+      "deviceId": "D-20418",
+      "hours": 1.5,
+      "dose": 4.9
+    },
+    {
+      "pernr": "10060411",
+      "date": "2026-11-20",
+      "deviceId": "D-20418",
+      "hours": 5,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-01",
+      "deviceId": "D-20419",
+      "hours": 5.5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-02",
+      "deviceId": "D-20419",
+      "hours": 8,
+      "dose": 17.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-17",
+      "deviceId": "D-20419",
+      "hours": 2,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-20",
+      "deviceId": "D-20419",
+      "hours": 5,
+      "dose": 12.1
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-24",
+      "deviceId": "D-20419",
+      "hours": 3.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-28",
+      "deviceId": "D-20419",
+      "hours": 4.5,
+      "dose": 14.7
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-10-31",
+      "deviceId": "D-20419",
+      "hours": 5.5,
+      "dose": 7.6
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-11-03",
+      "deviceId": "D-20419",
+      "hours": 1.5,
+      "dose": 0.8
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-11-17",
+      "deviceId": "D-20419",
+      "hours": 7.5,
+      "dose": 19.3
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-11-27",
+      "deviceId": "D-20419",
+      "hours": 6.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10060548",
+      "date": "2025-12-12",
+      "deviceId": "D-20419",
+      "hours": 6,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-01-05",
+      "deviceId": "D-20419",
+      "hours": 6.5,
+      "dose": 14.7
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-01-13",
+      "deviceId": "D-20419",
+      "hours": 3.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-01-26",
+      "deviceId": "D-20419",
+      "hours": 7.5,
+      "dose": 24.3
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-01-30",
+      "deviceId": "D-20419",
+      "hours": 4.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-02-11",
+      "deviceId": "D-20419",
+      "hours": 4,
+      "dose": 14.4
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-02-20",
+      "deviceId": "D-20419",
+      "hours": 1,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-04-15",
+      "deviceId": "D-20419",
+      "hours": 6.5,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-04-28",
+      "deviceId": "D-20419",
+      "hours": 5,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-05-15",
+      "deviceId": "D-20419",
+      "hours": 2.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-05-22",
+      "deviceId": "D-20419",
+      "hours": 7.5,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-05-27",
+      "deviceId": "D-20419",
+      "hours": 4,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-06-16",
+      "deviceId": "D-20419",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-06-24",
+      "deviceId": "D-20419",
+      "hours": 6,
+      "dose": 20.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-07-08",
+      "deviceId": "D-20419",
+      "hours": 4,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-07-09",
+      "deviceId": "D-20419",
+      "hours": 8,
+      "dose": 13.8
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-07-14",
+      "deviceId": "D-20419",
+      "hours": 4.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-07-17",
+      "deviceId": "D-20419",
+      "hours": 1.5,
+      "dose": 0.7
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-07-20",
+      "deviceId": "D-20419",
+      "hours": 5.5,
+      "dose": 14.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-08-10",
+      "deviceId": "D-20419",
+      "hours": 4,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-08-24",
+      "deviceId": "D-20419",
+      "hours": 1,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-09-18",
+      "deviceId": "D-20419",
+      "hours": 7.5,
+      "dose": 9.3
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-09-29",
+      "deviceId": "D-20419",
+      "hours": 2,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-10-12",
+      "deviceId": "D-20419",
+      "hours": 8,
+      "dose": 23.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-10-13",
+      "deviceId": "D-20419",
+      "hours": 6.5,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-11-03",
+      "deviceId": "D-20419",
+      "hours": 3.5,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10060548",
+      "date": "2026-11-04",
+      "deviceId": "D-20419",
+      "hours": 4.5,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10060685",
+      "date": "2025-11-13",
+      "deviceId": "D-20420",
+      "hours": 5.5,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10060685",
+      "date": "2025-11-14",
+      "deviceId": "D-20420",
+      "hours": 8,
+      "dose": 26.1
+    },
+    {
+      "pernr": "10060685",
+      "date": "2025-11-17",
+      "deviceId": "D-20420",
+      "hours": 2,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10060685",
+      "date": "2025-12-02",
+      "deviceId": "D-20420",
+      "hours": 5,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10060685",
+      "date": "2025-12-17",
+      "deviceId": "D-20420",
+      "hours": 8,
+      "dose": 8
+    },
+    {
+      "pernr": "10060685",
+      "date": "2025-12-24",
+      "deviceId": "D-20420",
+      "hours": 7.5,
+      "dose": 21.1
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-01-20",
+      "deviceId": "D-20420",
+      "hours": 2.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-03-09",
+      "deviceId": "D-20420",
+      "hours": 1,
+      "dose": 0.9
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-04-03",
+      "deviceId": "D-20420",
+      "hours": 7.5,
+      "dose": 15.1
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-04-22",
+      "deviceId": "D-20420",
+      "hours": 4,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-04-23",
+      "deviceId": "D-20420",
+      "hours": 1,
+      "dose": 3.2
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-04-29",
+      "deviceId": "D-20420",
+      "hours": 7.5,
+      "dose": 3
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-05-19",
+      "deviceId": "D-20420",
+      "hours": 1,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-06-10",
+      "deviceId": "D-20420",
+      "hours": 7,
+      "dose": 19.4
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-06-11",
+      "deviceId": "D-20420",
+      "hours": 4,
+      "dose": 8.3
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-06-15",
+      "deviceId": "D-20420",
+      "hours": 3,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-06-16",
+      "deviceId": "D-20420",
+      "hours": 5,
+      "dose": 10
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-06-29",
+      "deviceId": "D-20420",
+      "hours": 1,
+      "dose": 2.1
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-07-06",
+      "deviceId": "D-20420",
+      "hours": 7,
+      "dose": 21.5
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-07-27",
+      "deviceId": "D-20420",
+      "hours": 3,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-07-31",
+      "deviceId": "D-20420",
+      "hours": 1.5,
+      "dose": 2
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-08-06",
+      "deviceId": "D-20420",
+      "hours": 1.5,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-08-19",
+      "deviceId": "D-20420",
+      "hours": 2,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-08-20",
+      "deviceId": "D-20420",
+      "hours": 6.5,
+      "dose": 18.2
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-09-02",
+      "deviceId": "D-20420",
+      "hours": 5.5,
+      "dose": 12.7
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-09-07",
+      "deviceId": "D-20420",
+      "hours": 5.5,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-09-08",
+      "deviceId": "D-20420",
+      "hours": 6.5,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-09-10",
+      "deviceId": "D-20420",
+      "hours": 5.5,
+      "dose": 15
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-09-11",
+      "deviceId": "D-20420",
+      "hours": 3.5,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-09-15",
+      "deviceId": "D-20420",
+      "hours": 2.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-10-09",
+      "deviceId": "D-20420",
+      "hours": 2,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-10-23",
+      "deviceId": "D-20420",
+      "hours": 2,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10060685",
+      "date": "2026-11-03",
+      "deviceId": "D-20420",
+      "hours": 6.5,
+      "dose": 22.2
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-03",
+      "deviceId": "D-20421",
+      "hours": 2,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-08",
+      "deviceId": "D-20421",
+      "hours": 3,
+      "dose": 2.1
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-09",
+      "deviceId": "D-20421",
+      "hours": 4,
+      "dose": 10
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-17",
+      "deviceId": "D-20421",
+      "hours": 4,
+      "dose": 9.2
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-27",
+      "deviceId": "D-20421",
+      "hours": 3,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-29",
+      "deviceId": "D-20421",
+      "hours": 4.5,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-10-31",
+      "deviceId": "D-20421",
+      "hours": 7,
+      "dose": 22.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-12-01",
+      "deviceId": "D-20421",
+      "hours": 3.5,
+      "dose": 9.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-12-09",
+      "deviceId": "D-20421",
+      "hours": 7,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-12-22",
+      "deviceId": "D-20421",
+      "hours": 7,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2025-12-30",
+      "deviceId": "D-20421",
+      "hours": 1,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-01-23",
+      "deviceId": "D-20421",
+      "hours": 6,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-02-13",
+      "deviceId": "D-20421",
+      "hours": 8,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-02-17",
+      "deviceId": "D-20421",
+      "hours": 1.5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-02-26",
+      "deviceId": "D-20421",
+      "hours": 2.5,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-03-13",
+      "deviceId": "D-20421",
+      "hours": 4,
+      "dose": 11.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-04-01",
+      "deviceId": "D-20421",
+      "hours": 3,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-04-06",
+      "deviceId": "D-20421",
+      "hours": 5,
+      "dose": 15.8
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-04-14",
+      "deviceId": "D-20421",
+      "hours": 6,
+      "dose": 4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-04-21",
+      "deviceId": "D-20421",
+      "hours": 4,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-05-22",
+      "deviceId": "D-20421",
+      "hours": 6,
+      "dose": 21.2
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-06-16",
+      "deviceId": "D-20421",
+      "hours": 3.5,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-07-13",
+      "deviceId": "D-20421",
+      "hours": 6,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-07-24",
+      "deviceId": "D-20421",
+      "hours": 4.5,
+      "dose": 15.9
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-08-04",
+      "deviceId": "D-20421",
+      "hours": 1,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-08-17",
+      "deviceId": "D-20421",
+      "hours": 2,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-08-19",
+      "deviceId": "D-20421",
+      "hours": 3,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-08-25",
+      "deviceId": "D-20421",
+      "hours": 5.5,
+      "dose": 7
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-08-26",
+      "deviceId": "D-20421",
+      "hours": 1.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-08-28",
+      "deviceId": "D-20421",
+      "hours": 7.5,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-09-08",
+      "deviceId": "D-20421",
+      "hours": 8,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-09-22",
+      "deviceId": "D-20421",
+      "hours": 1.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-09-30",
+      "deviceId": "D-20421",
+      "hours": 8,
+      "dose": 22.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-10-01",
+      "deviceId": "D-20421",
+      "hours": 5.5,
+      "dose": 14.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-10-26",
+      "deviceId": "D-20421",
+      "hours": 6,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-11-03",
+      "deviceId": "D-20421",
+      "hours": 2.5,
+      "dose": 8.6
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-11-11",
+      "deviceId": "D-20421",
+      "hours": 4.5,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10060822",
+      "date": "2026-11-20",
+      "deviceId": "D-20421",
+      "hours": 5.5,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-10-01",
+      "deviceId": "D-20422",
+      "hours": 3.5,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-10-06",
+      "deviceId": "D-20422",
+      "hours": 1.5,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-10-13",
+      "deviceId": "D-20422",
+      "hours": 2,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-10-14",
+      "deviceId": "D-20422",
+      "hours": 7.5,
+      "dose": 18.6
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-11-07",
+      "deviceId": "D-20422",
+      "hours": 7.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-11-14",
+      "deviceId": "D-20422",
+      "hours": 3,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-11-24",
+      "deviceId": "D-20422",
+      "hours": 4,
+      "dose": 14
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-11-25",
+      "deviceId": "D-20422",
+      "hours": 3.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-12-02",
+      "deviceId": "D-20422",
+      "hours": 2,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-12-03",
+      "deviceId": "D-20422",
+      "hours": 4,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-12-04",
+      "deviceId": "D-20422",
+      "hours": 2.5,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-12-12",
+      "deviceId": "D-20422",
+      "hours": 3,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-12-29",
+      "deviceId": "D-20422",
+      "hours": 4.5,
+      "dose": 11.4
+    },
+    {
+      "pernr": "10060959",
+      "date": "2025-12-30",
+      "deviceId": "D-20422",
+      "hours": 8,
+      "dose": 14.9
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-01-28",
+      "deviceId": "D-20422",
+      "hours": 7,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-02-27",
+      "deviceId": "D-20422",
+      "hours": 4.5,
+      "dose": 9.6
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-05-27",
+      "deviceId": "D-20422",
+      "hours": 7.5,
+      "dose": 24.3
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-06-23",
+      "deviceId": "D-20422",
+      "hours": 4,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-06-29",
+      "deviceId": "D-20422",
+      "hours": 7.5,
+      "dose": 8.3
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-07-07",
+      "deviceId": "D-20422",
+      "hours": 3.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-07-14",
+      "deviceId": "D-20422",
+      "hours": 4,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-08-11",
+      "deviceId": "D-20422",
+      "hours": 2.5,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-08-17",
+      "deviceId": "D-20422",
+      "hours": 1.5,
+      "dose": 4.3
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-08-19",
+      "deviceId": "D-20422",
+      "hours": 2,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-08-21",
+      "deviceId": "D-20422",
+      "hours": 5,
+      "dose": 17.7
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-10-09",
+      "deviceId": "D-20422",
+      "hours": 6,
+      "dose": 15
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-10-12",
+      "deviceId": "D-20422",
+      "hours": 7.5,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10060959",
+      "date": "2026-10-29",
+      "deviceId": "D-20422",
+      "hours": 2.5,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-10-02",
+      "deviceId": "D-20423",
+      "hours": 5,
+      "dose": 2
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-10-07",
+      "deviceId": "D-20423",
+      "hours": 2,
+      "dose": 2.2
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-10-29",
+      "deviceId": "D-20423",
+      "hours": 8,
+      "dose": 5.5
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-11-18",
+      "deviceId": "D-20423",
+      "hours": 2,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-11-20",
+      "deviceId": "D-20423",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-04",
+      "deviceId": "D-20423",
+      "hours": 1.5,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-11",
+      "deviceId": "D-20423",
+      "hours": 2.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-16",
+      "deviceId": "D-20423",
+      "hours": 1.5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-17",
+      "deviceId": "D-20423",
+      "hours": 7,
+      "dose": 10.5
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-19",
+      "deviceId": "D-20423",
+      "hours": 4,
+      "dose": 12.6
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-25",
+      "deviceId": "D-20423",
+      "hours": 6,
+      "dose": 5.6
+    },
+    {
+      "pernr": "10061096",
+      "date": "2025-12-29",
+      "deviceId": "D-20423",
+      "hours": 7,
+      "dose": 20.3
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-01-06",
+      "deviceId": "D-20423",
+      "hours": 7.5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-01-14",
+      "deviceId": "D-20423",
+      "hours": 5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-02-06",
+      "deviceId": "D-20423",
+      "hours": 2.5,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-02-19",
+      "deviceId": "D-20423",
+      "hours": 2.5,
+      "dose": 8.9
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-03-03",
+      "deviceId": "D-20423",
+      "hours": 4.5,
+      "dose": 13.1
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-03-06",
+      "deviceId": "D-20423",
+      "hours": 8,
+      "dose": 16.7
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-03-11",
+      "deviceId": "D-20423",
+      "hours": 4.5,
+      "dose": 14.8
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-03-24",
+      "deviceId": "D-20423",
+      "hours": 3.5,
+      "dose": 9
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-03-30",
+      "deviceId": "D-20423",
+      "hours": 4.5,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-04-09",
+      "deviceId": "D-20423",
+      "hours": 1,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-05-06",
+      "deviceId": "D-20423",
+      "hours": 5.5,
+      "dose": 13.1
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-05-12",
+      "deviceId": "D-20423",
+      "hours": 8,
+      "dose": 20.4
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-06-04",
+      "deviceId": "D-20423",
+      "hours": 6,
+      "dose": 12.1
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-06-09",
+      "deviceId": "D-20423",
+      "hours": 4.5,
+      "dose": 11.7
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-06-15",
+      "deviceId": "D-20423",
+      "hours": 2,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-06-24",
+      "deviceId": "D-20423",
+      "hours": 3,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-08-17",
+      "deviceId": "D-20423",
+      "hours": 3.5,
+      "dose": 11.9
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-08-25",
+      "deviceId": "D-20423",
+      "hours": 1,
+      "dose": 1.2
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-08-28",
+      "deviceId": "D-20423",
+      "hours": 4.5,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-09-08",
+      "deviceId": "D-20423",
+      "hours": 8,
+      "dose": 21
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-09-09",
+      "deviceId": "D-20423",
+      "hours": 8,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-09-30",
+      "deviceId": "D-20423",
+      "hours": 2.5,
+      "dose": 1.6
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-10-23",
+      "deviceId": "D-20423",
+      "hours": 6.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-11-17",
+      "deviceId": "D-20423",
+      "hours": 3,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10061096",
+      "date": "2026-11-19",
+      "deviceId": "D-20423",
+      "hours": 7.5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-10-30",
+      "deviceId": "D-20424",
+      "hours": 5,
+      "dose": 5.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-11-07",
+      "deviceId": "D-20424",
+      "hours": 7,
+      "dose": 17.3
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-11-13",
+      "deviceId": "D-20424",
+      "hours": 3.5,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-11-17",
+      "deviceId": "D-20424",
+      "hours": 2,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-11-27",
+      "deviceId": "D-20424",
+      "hours": 4,
+      "dose": 13
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-11-28",
+      "deviceId": "D-20424",
+      "hours": 1,
+      "dose": 0.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2025-12-02",
+      "deviceId": "D-20424",
+      "hours": 5.5,
+      "dose": 14.1
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-01-23",
+      "deviceId": "D-20424",
+      "hours": 6,
+      "dose": 20
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-02-03",
+      "deviceId": "D-20424",
+      "hours": 1,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-02-24",
+      "deviceId": "D-20424",
+      "hours": 6.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-03-25",
+      "deviceId": "D-20424",
+      "hours": 7,
+      "dose": 19.9
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-04-02",
+      "deviceId": "D-20424",
+      "hours": 6,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-04-09",
+      "deviceId": "D-20424",
+      "hours": 3,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-04-23",
+      "deviceId": "D-20424",
+      "hours": 7.5,
+      "dose": 18.4
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-05-04",
+      "deviceId": "D-20424",
+      "hours": 2,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-05-05",
+      "deviceId": "D-20424",
+      "hours": 3.5,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-05-11",
+      "deviceId": "D-20424",
+      "hours": 3.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-05-12",
+      "deviceId": "D-20424",
+      "hours": 4,
+      "dose": 7.1
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-05-14",
+      "deviceId": "D-20424",
+      "hours": 2,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-05-25",
+      "deviceId": "D-20424",
+      "hours": 6,
+      "dose": 17.3
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-06-02",
+      "deviceId": "D-20424",
+      "hours": 6.5,
+      "dose": 16.8
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-06-10",
+      "deviceId": "D-20424",
+      "hours": 2,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-06-24",
+      "deviceId": "D-20424",
+      "hours": 2,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-07-06",
+      "deviceId": "D-20424",
+      "hours": 7.5,
+      "dose": 19.6
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-07-07",
+      "deviceId": "D-20424",
+      "hours": 5.5,
+      "dose": 16.3
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-07-17",
+      "deviceId": "D-20424",
+      "hours": 4.5,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-07-23",
+      "deviceId": "D-20424",
+      "hours": 8,
+      "dose": 5.2
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-08-04",
+      "deviceId": "D-20424",
+      "hours": 7.5,
+      "dose": 16.5
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-08-18",
+      "deviceId": "D-20424",
+      "hours": 7.5,
+      "dose": 13.8
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-09-07",
+      "deviceId": "D-20424",
+      "hours": 6.5,
+      "dose": 5.6
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-09-24",
+      "deviceId": "D-20424",
+      "hours": 6.5,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-10-02",
+      "deviceId": "D-20424",
+      "hours": 6,
+      "dose": 15.7
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-10-30",
+      "deviceId": "D-20424",
+      "hours": 4.5,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-11-03",
+      "deviceId": "D-20424",
+      "hours": 2.5,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10061233",
+      "date": "2026-11-05",
+      "deviceId": "D-20424",
+      "hours": 5,
+      "dose": 13.7
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-10-15",
+      "deviceId": "D-20425",
+      "hours": 4,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-11-03",
+      "deviceId": "D-20425",
+      "hours": 1.5,
+      "dose": 1
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-11-14",
+      "deviceId": "D-20425",
+      "hours": 5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-11-17",
+      "deviceId": "D-20425",
+      "hours": 2,
+      "dose": 1
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-12-03",
+      "deviceId": "D-20425",
+      "hours": 8,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-12-04",
+      "deviceId": "D-20425",
+      "hours": 3.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-12-15",
+      "deviceId": "D-20425",
+      "hours": 8,
+      "dose": 22.9
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-12-25",
+      "deviceId": "D-20425",
+      "hours": 5,
+      "dose": 16.4
+    },
+    {
+      "pernr": "10061370",
+      "date": "2025-12-26",
+      "deviceId": "D-20425",
+      "hours": 4.5,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-01-08",
+      "deviceId": "D-20425",
+      "hours": 8,
+      "dose": 26.3
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-01-27",
+      "deviceId": "D-20425",
+      "hours": 7.5,
+      "dose": 20.5
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-01-29",
+      "deviceId": "D-20425",
+      "hours": 1.5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-02-24",
+      "deviceId": "D-20425",
+      "hours": 2.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-02-25",
+      "deviceId": "D-20425",
+      "hours": 7.5,
+      "dose": 17.2
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-03-05",
+      "deviceId": "D-20425",
+      "hours": 5.5,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-03-19",
+      "deviceId": "D-20425",
+      "hours": 6,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-03-30",
+      "deviceId": "D-20425",
+      "hours": 5,
+      "dose": 12.2
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-04-08",
+      "deviceId": "D-20425",
+      "hours": 4.5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-06-09",
+      "deviceId": "D-20425",
+      "hours": 6,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-06-25",
+      "deviceId": "D-20425",
+      "hours": 4.5,
+      "dose": 4.2
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-06-29",
+      "deviceId": "D-20425",
+      "hours": 7,
+      "dose": 12.6
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-07-07",
+      "deviceId": "D-20425",
+      "hours": 7,
+      "dose": 15.4
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-08-03",
+      "deviceId": "D-20425",
+      "hours": 1.5,
+      "dose": 0.6
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-08-28",
+      "deviceId": "D-20425",
+      "hours": 4.5,
+      "dose": 7.2
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-08-31",
+      "deviceId": "D-20425",
+      "hours": 1.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-09-01",
+      "deviceId": "D-20425",
+      "hours": 3.5,
+      "dose": 8.9
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-09-17",
+      "deviceId": "D-20425",
+      "hours": 4,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-10-07",
+      "deviceId": "D-20425",
+      "hours": 4.5,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-10-30",
+      "deviceId": "D-20425",
+      "hours": 8,
+      "dose": 15.7
+    },
+    {
+      "pernr": "10061370",
+      "date": "2026-11-10",
+      "deviceId": "D-20425",
+      "hours": 3.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2025-10-13",
+      "deviceId": "D-20426",
+      "hours": 8,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10061507",
+      "date": "2025-10-17",
+      "deviceId": "D-20426",
+      "hours": 3.5,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10061507",
+      "date": "2025-10-23",
+      "deviceId": "D-20426",
+      "hours": 7,
+      "dose": 13.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2025-11-06",
+      "deviceId": "D-20426",
+      "hours": 5.5,
+      "dose": 10.8
+    },
+    {
+      "pernr": "10061507",
+      "date": "2025-11-14",
+      "deviceId": "D-20426",
+      "hours": 3,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10061507",
+      "date": "2025-12-19",
+      "deviceId": "D-20426",
+      "hours": 4.5,
+      "dose": 13.7
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-01-12",
+      "deviceId": "D-20426",
+      "hours": 2.5,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-02-13",
+      "deviceId": "D-20426",
+      "hours": 3,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-02-18",
+      "deviceId": "D-20426",
+      "hours": 5.5,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-02-20",
+      "deviceId": "D-20426",
+      "hours": 8,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-02-25",
+      "deviceId": "D-20426",
+      "hours": 3.5,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-02-27",
+      "deviceId": "D-20426",
+      "hours": 1,
+      "dose": 2.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-03-03",
+      "deviceId": "D-20426",
+      "hours": 2.5,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-03-04",
+      "deviceId": "D-20426",
+      "hours": 4,
+      "dose": 3.2
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-05-08",
+      "deviceId": "D-20426",
+      "hours": 7,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-05-20",
+      "deviceId": "D-20426",
+      "hours": 3.5,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-05-26",
+      "deviceId": "D-20426",
+      "hours": 6.5,
+      "dose": 19.5
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-06-08",
+      "deviceId": "D-20426",
+      "hours": 5.5,
+      "dose": 10.9
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-06-17",
+      "deviceId": "D-20426",
+      "hours": 3.5,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-06-22",
+      "deviceId": "D-20426",
+      "hours": 4,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-07-06",
+      "deviceId": "D-20426",
+      "hours": 3,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-07-14",
+      "deviceId": "D-20426",
+      "hours": 5.5,
+      "dose": 18.2
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-07-27",
+      "deviceId": "D-20426",
+      "hours": 2,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-07-29",
+      "deviceId": "D-20426",
+      "hours": 4.5,
+      "dose": 10.8
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-08-06",
+      "deviceId": "D-20426",
+      "hours": 6,
+      "dose": 14.1
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-08-25",
+      "deviceId": "D-20426",
+      "hours": 4,
+      "dose": 9.2
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-08-28",
+      "deviceId": "D-20426",
+      "hours": 3,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-09-03",
+      "deviceId": "D-20426",
+      "hours": 5,
+      "dose": 10.5
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-09-07",
+      "deviceId": "D-20426",
+      "hours": 6.5,
+      "dose": 16.8
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-09-11",
+      "deviceId": "D-20426",
+      "hours": 7.5,
+      "dose": 24.6
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-10-06",
+      "deviceId": "D-20426",
+      "hours": 7.5,
+      "dose": 18.6
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-10-13",
+      "deviceId": "D-20426",
+      "hours": 5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-10-16",
+      "deviceId": "D-20426",
+      "hours": 5.5,
+      "dose": 18.2
+    },
+    {
+      "pernr": "10061507",
+      "date": "2026-10-29",
+      "deviceId": "D-20426",
+      "hours": 5.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10061644",
+      "date": "2025-10-08",
+      "deviceId": "D-20427",
+      "hours": 4.5,
+      "dose": 13
+    },
+    {
+      "pernr": "10061644",
+      "date": "2025-11-03",
+      "deviceId": "D-20427",
+      "hours": 6,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-01-13",
+      "deviceId": "D-20427",
+      "hours": 2.5,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-02-04",
+      "deviceId": "D-20427",
+      "hours": 6,
+      "dose": 15.1
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-02-11",
+      "deviceId": "D-20427",
+      "hours": 7.5,
+      "dose": 26.5
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-02-19",
+      "deviceId": "D-20427",
+      "hours": 6,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-02-20",
+      "deviceId": "D-20427",
+      "hours": 5,
+      "dose": 9.2
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-03-10",
+      "deviceId": "D-20427",
+      "hours": 3.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-04-23",
+      "deviceId": "D-20427",
+      "hours": 2,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-05-20",
+      "deviceId": "D-20427",
+      "hours": 6,
+      "dose": 18.4
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-05-27",
+      "deviceId": "D-20427",
+      "hours": 3,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-06-17",
+      "deviceId": "D-20427",
+      "hours": 4.5,
+      "dose": 11.9
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-07-09",
+      "deviceId": "D-20427",
+      "hours": 6,
+      "dose": 17.8
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-07-27",
+      "deviceId": "D-20427",
+      "hours": 4,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-07-28",
+      "deviceId": "D-20427",
+      "hours": 2.5,
+      "dose": 4.3
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-07-29",
+      "deviceId": "D-20427",
+      "hours": 7,
+      "dose": 24.3
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-08-10",
+      "deviceId": "D-20427",
+      "hours": 3.5,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-08-26",
+      "deviceId": "D-20427",
+      "hours": 2,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-08-28",
+      "deviceId": "D-20427",
+      "hours": 5.5,
+      "dose": 10.4
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-09-08",
+      "deviceId": "D-20427",
+      "hours": 8,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-09-09",
+      "deviceId": "D-20427",
+      "hours": 7,
+      "dose": 17.1
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-09-16",
+      "deviceId": "D-20427",
+      "hours": 4.5,
+      "dose": 4
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-09-18",
+      "deviceId": "D-20427",
+      "hours": 4.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-10-26",
+      "deviceId": "D-20427",
+      "hours": 6,
+      "dose": 10.7
+    },
+    {
+      "pernr": "10061644",
+      "date": "2026-11-20",
+      "deviceId": "D-20427",
+      "hours": 4.5,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-10-01",
+      "deviceId": "D-20428",
+      "hours": 3.5,
+      "dose": 9.6
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-10-22",
+      "deviceId": "D-20428",
+      "hours": 1.5,
+      "dose": 0.7
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-10-30",
+      "deviceId": "D-20428",
+      "hours": 8,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-10-31",
+      "deviceId": "D-20428",
+      "hours": 4,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-11-17",
+      "deviceId": "D-20428",
+      "hours": 7,
+      "dose": 18.9
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-11-26",
+      "deviceId": "D-20428",
+      "hours": 7,
+      "dose": 21.1
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-11-28",
+      "deviceId": "D-20428",
+      "hours": 3.5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-12-05",
+      "deviceId": "D-20428",
+      "hours": 5.5,
+      "dose": 17.6
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-12-29",
+      "deviceId": "D-20428",
+      "hours": 5.5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10061781",
+      "date": "2025-12-31",
+      "deviceId": "D-20428",
+      "hours": 7.5,
+      "dose": 18.6
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-01-09",
+      "deviceId": "D-20428",
+      "hours": 2,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-01-14",
+      "deviceId": "D-20428",
+      "hours": 2,
+      "dose": 0.9
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-01-21",
+      "deviceId": "D-20428",
+      "hours": 2.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-01-29",
+      "deviceId": "D-20428",
+      "hours": 6,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-02-12",
+      "deviceId": "D-20428",
+      "hours": 4.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-03-10",
+      "deviceId": "D-20428",
+      "hours": 7.5,
+      "dose": 17.9
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-03-19",
+      "deviceId": "D-20428",
+      "hours": 6,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-05-08",
+      "deviceId": "D-20428",
+      "hours": 3.5,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-05-20",
+      "deviceId": "D-20428",
+      "hours": 2,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-05-28",
+      "deviceId": "D-20428",
+      "hours": 1,
+      "dose": 0.4
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-06-02",
+      "deviceId": "D-20428",
+      "hours": 1,
+      "dose": 2
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-06-08",
+      "deviceId": "D-20428",
+      "hours": 4,
+      "dose": 13.9
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-06-24",
+      "deviceId": "D-20428",
+      "hours": 6,
+      "dose": 5.5
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-07-09",
+      "deviceId": "D-20428",
+      "hours": 8,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-08-03",
+      "deviceId": "D-20428",
+      "hours": 1,
+      "dose": 1
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-08-04",
+      "deviceId": "D-20428",
+      "hours": 7,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-08-21",
+      "deviceId": "D-20428",
+      "hours": 6,
+      "dose": 13.1
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-08-24",
+      "deviceId": "D-20428",
+      "hours": 5,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-09-02",
+      "deviceId": "D-20428",
+      "hours": 3,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-09-07",
+      "deviceId": "D-20428",
+      "hours": 1,
+      "dose": 1.1
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-09-11",
+      "deviceId": "D-20428",
+      "hours": 3.5,
+      "dose": 8.6
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-09-17",
+      "deviceId": "D-20428",
+      "hours": 7.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-09-18",
+      "deviceId": "D-20428",
+      "hours": 3.5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-10-06",
+      "deviceId": "D-20428",
+      "hours": 7,
+      "dose": 22.6
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-10-08",
+      "deviceId": "D-20428",
+      "hours": 7,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-10-12",
+      "deviceId": "D-20428",
+      "hours": 6.5,
+      "dose": 21.9
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-11-05",
+      "deviceId": "D-20428",
+      "hours": 8,
+      "dose": 23.2
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-11-10",
+      "deviceId": "D-20428",
+      "hours": 5.5,
+      "dose": 8.3
+    },
+    {
+      "pernr": "10061781",
+      "date": "2026-11-18",
+      "deviceId": "D-20428",
+      "hours": 7,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-10-10",
+      "deviceId": "D-20429",
+      "hours": 7.5,
+      "dose": 15.8
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-10-30",
+      "deviceId": "D-20429",
+      "hours": 6,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-10-31",
+      "deviceId": "D-20429",
+      "hours": 3,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-11-07",
+      "deviceId": "D-20429",
+      "hours": 4.5,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-11-11",
+      "deviceId": "D-20429",
+      "hours": 3,
+      "dose": 9.6
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-11-21",
+      "deviceId": "D-20429",
+      "hours": 4.5,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-12-12",
+      "deviceId": "D-20429",
+      "hours": 2,
+      "dose": 3.8
+    },
+    {
+      "pernr": "10061918",
+      "date": "2025-12-16",
+      "deviceId": "D-20429",
+      "hours": 3,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-01-22",
+      "deviceId": "D-20429",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-01-28",
+      "deviceId": "D-20429",
+      "hours": 7.5,
+      "dose": 7
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-02-04",
+      "deviceId": "D-20429",
+      "hours": 3.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-04-03",
+      "deviceId": "D-20429",
+      "hours": 7,
+      "dose": 20.4
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-05-06",
+      "deviceId": "D-20429",
+      "hours": 6,
+      "dose": 18.8
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-05-11",
+      "deviceId": "D-20429",
+      "hours": 4.5,
+      "dose": 13.4
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-05-26",
+      "deviceId": "D-20429",
+      "hours": 1.5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-05-27",
+      "deviceId": "D-20429",
+      "hours": 3.5,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-06-11",
+      "deviceId": "D-20429",
+      "hours": 3.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-06-12",
+      "deviceId": "D-20429",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-06-29",
+      "deviceId": "D-20429",
+      "hours": 3,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-06-30",
+      "deviceId": "D-20429",
+      "hours": 1,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-07-06",
+      "deviceId": "D-20429",
+      "hours": 7.5,
+      "dose": 16.8
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-07-14",
+      "deviceId": "D-20429",
+      "hours": 2,
+      "dose": 4.9
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-07-15",
+      "deviceId": "D-20429",
+      "hours": 7.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-07-20",
+      "deviceId": "D-20429",
+      "hours": 3.5,
+      "dose": 8.9
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-07-23",
+      "deviceId": "D-20429",
+      "hours": 6.5,
+      "dose": 11.4
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-08-03",
+      "deviceId": "D-20429",
+      "hours": 8,
+      "dose": 16.7
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-08-06",
+      "deviceId": "D-20429",
+      "hours": 1.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-08-24",
+      "deviceId": "D-20429",
+      "hours": 4.5,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-09-17",
+      "deviceId": "D-20429",
+      "hours": 6.5,
+      "dose": 12.7
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-09-23",
+      "deviceId": "D-20429",
+      "hours": 7.5,
+      "dose": 4.3
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-09-25",
+      "deviceId": "D-20429",
+      "hours": 1,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-09-30",
+      "deviceId": "D-20429",
+      "hours": 6.5,
+      "dose": 20.1
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-10-08",
+      "deviceId": "D-20429",
+      "hours": 5.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-11-09",
+      "deviceId": "D-20429",
+      "hours": 6,
+      "dose": 16.7
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-11-11",
+      "deviceId": "D-20429",
+      "hours": 3,
+      "dose": 5.6
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-11-13",
+      "deviceId": "D-20429",
+      "hours": 2,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10061918",
+      "date": "2026-11-18",
+      "deviceId": "D-20429",
+      "hours": 3,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-10-07",
+      "deviceId": "D-20430",
+      "hours": 1.5,
+      "dose": 1.5
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-11-10",
+      "deviceId": "D-20430",
+      "hours": 8,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-11-13",
+      "deviceId": "D-20430",
+      "hours": 4.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-11-14",
+      "deviceId": "D-20430",
+      "hours": 7,
+      "dose": 16.4
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-11-20",
+      "deviceId": "D-20430",
+      "hours": 1.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-11-28",
+      "deviceId": "D-20430",
+      "hours": 6,
+      "dose": 21.5
+    },
+    {
+      "pernr": "10062055",
+      "date": "2025-12-03",
+      "deviceId": "D-20430",
+      "hours": 8,
+      "dose": 12.5
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-01-07",
+      "deviceId": "D-20430",
+      "hours": 3.5,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-01-14",
+      "deviceId": "D-20430",
+      "hours": 2,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-01-27",
+      "deviceId": "D-20430",
+      "hours": 2.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-02-09",
+      "deviceId": "D-20430",
+      "hours": 2.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-02-18",
+      "deviceId": "D-20430",
+      "hours": 7,
+      "dose": 12.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-02-19",
+      "deviceId": "D-20430",
+      "hours": 2,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-02-26",
+      "deviceId": "D-20430",
+      "hours": 2.5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-03-23",
+      "deviceId": "D-20430",
+      "hours": 3,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-03-31",
+      "deviceId": "D-20430",
+      "hours": 7.5,
+      "dose": 21
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-04-03",
+      "deviceId": "D-20430",
+      "hours": 7.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-04-08",
+      "deviceId": "D-20430",
+      "hours": 2,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-04-15",
+      "deviceId": "D-20430",
+      "hours": 2,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-04-27",
+      "deviceId": "D-20430",
+      "hours": 3.5,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-06-10",
+      "deviceId": "D-20430",
+      "hours": 4,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-06-24",
+      "deviceId": "D-20430",
+      "hours": 8,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-07-08",
+      "deviceId": "D-20430",
+      "hours": 3,
+      "dose": 10.7
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-07-24",
+      "deviceId": "D-20430",
+      "hours": 4.5,
+      "dose": 4.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-07-30",
+      "deviceId": "D-20430",
+      "hours": 4.5,
+      "dose": 13.3
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-08-06",
+      "deviceId": "D-20430",
+      "hours": 1.5,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-08-13",
+      "deviceId": "D-20430",
+      "hours": 3.5,
+      "dose": 4
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-08-18",
+      "deviceId": "D-20430",
+      "hours": 5,
+      "dose": 9.2
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-08-26",
+      "deviceId": "D-20430",
+      "hours": 4.5,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-09-08",
+      "deviceId": "D-20430",
+      "hours": 7,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-09-11",
+      "deviceId": "D-20430",
+      "hours": 4.5,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-10-01",
+      "deviceId": "D-20430",
+      "hours": 2,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-10-08",
+      "deviceId": "D-20430",
+      "hours": 5.5,
+      "dose": 9.8
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-10-19",
+      "deviceId": "D-20430",
+      "hours": 5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-10-22",
+      "deviceId": "D-20430",
+      "hours": 7.5,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-10-23",
+      "deviceId": "D-20430",
+      "hours": 3.5,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-10-26",
+      "deviceId": "D-20430",
+      "hours": 2,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-11-11",
+      "deviceId": "D-20430",
+      "hours": 1,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10062055",
+      "date": "2026-11-20",
+      "deviceId": "D-20430",
+      "hours": 3,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-10-08",
+      "deviceId": "D-20431",
+      "hours": 5.5,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-10-17",
+      "deviceId": "D-20431",
+      "hours": 4.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-10-28",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 6.9
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-10-31",
+      "deviceId": "D-20431",
+      "hours": 5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-11-28",
+      "deviceId": "D-20431",
+      "hours": 4,
+      "dose": 10.4
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-12-01",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-12-02",
+      "deviceId": "D-20431",
+      "hours": 8,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-12-30",
+      "deviceId": "D-20431",
+      "hours": 5.5,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10062192",
+      "date": "2025-12-31",
+      "deviceId": "D-20431",
+      "hours": 1.5,
+      "dose": 4.4
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-01-05",
+      "deviceId": "D-20431",
+      "hours": 5,
+      "dose": 4.3
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-01-07",
+      "deviceId": "D-20431",
+      "hours": 5,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-01-09",
+      "deviceId": "D-20431",
+      "hours": 3,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-01-20",
+      "deviceId": "D-20431",
+      "hours": 3.5,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-01-21",
+      "deviceId": "D-20431",
+      "hours": 8,
+      "dose": 18.3
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-02-03",
+      "deviceId": "D-20431",
+      "hours": 6,
+      "dose": 20.7
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-02-16",
+      "deviceId": "D-20431",
+      "hours": 1,
+      "dose": 0.8
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-02-25",
+      "deviceId": "D-20431",
+      "hours": 1.5,
+      "dose": 2.1
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-04-09",
+      "deviceId": "D-20431",
+      "hours": 3,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-05-22",
+      "deviceId": "D-20431",
+      "hours": 5.5,
+      "dose": 15.4
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-06-01",
+      "deviceId": "D-20431",
+      "hours": 6,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-06-04",
+      "deviceId": "D-20431",
+      "hours": 6.5,
+      "dose": 22
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-06-18",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 5.7
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-06-26",
+      "deviceId": "D-20431",
+      "hours": 7,
+      "dose": 19.2
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-07-21",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-07-27",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-07-29",
+      "deviceId": "D-20431",
+      "hours": 3.5,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-08-03",
+      "deviceId": "D-20431",
+      "hours": 2,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-09-01",
+      "deviceId": "D-20431",
+      "hours": 5.5,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-09-04",
+      "deviceId": "D-20431",
+      "hours": 4.5,
+      "dose": 3.2
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-09-07",
+      "deviceId": "D-20431",
+      "hours": 4.5,
+      "dose": 16
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-09-28",
+      "deviceId": "D-20431",
+      "hours": 3.5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-09-30",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-10-01",
+      "deviceId": "D-20431",
+      "hours": 5.5,
+      "dose": 8.3
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-10-09",
+      "deviceId": "D-20431",
+      "hours": 2.5,
+      "dose": 4.2
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-10-19",
+      "deviceId": "D-20431",
+      "hours": 5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-10-27",
+      "deviceId": "D-20431",
+      "hours": 7,
+      "dose": 17.5
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-11-02",
+      "deviceId": "D-20431",
+      "hours": 7.5,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10062192",
+      "date": "2026-11-10",
+      "deviceId": "D-20431",
+      "hours": 3.5,
+      "dose": 4
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-10-16",
+      "deviceId": "D-20432",
+      "hours": 1.5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-10-20",
+      "deviceId": "D-20432",
+      "hours": 3,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-11-10",
+      "deviceId": "D-20432",
+      "hours": 5,
+      "dose": 14.6
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-12-03",
+      "deviceId": "D-20432",
+      "hours": 1,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-12-09",
+      "deviceId": "D-20432",
+      "hours": 6,
+      "dose": 19.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-12-11",
+      "deviceId": "D-20432",
+      "hours": 7.5,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-12-12",
+      "deviceId": "D-20432",
+      "hours": 7,
+      "dose": 18.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-12-30",
+      "deviceId": "D-20432",
+      "hours": 5.5,
+      "dose": 18
+    },
+    {
+      "pernr": "10062329",
+      "date": "2025-12-31",
+      "deviceId": "D-20432",
+      "hours": 7.5,
+      "dose": 22.1
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-01-06",
+      "deviceId": "D-20432",
+      "hours": 5.5,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-01-08",
+      "deviceId": "D-20432",
+      "hours": 6.5,
+      "dose": 21.7
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-01-21",
+      "deviceId": "D-20432",
+      "hours": 7,
+      "dose": 9
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-01-27",
+      "deviceId": "D-20432",
+      "hours": 5,
+      "dose": 16.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-02-13",
+      "deviceId": "D-20432",
+      "hours": 5,
+      "dose": 10
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-02-19",
+      "deviceId": "D-20432",
+      "hours": 6,
+      "dose": 10.4
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-02-23",
+      "deviceId": "D-20432",
+      "hours": 6.5,
+      "dose": 16.7
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-03-03",
+      "deviceId": "D-20432",
+      "hours": 5.5,
+      "dose": 16.1
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-03-13",
+      "deviceId": "D-20432",
+      "hours": 4.5,
+      "dose": 11.6
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-03-23",
+      "deviceId": "D-20432",
+      "hours": 4.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-04-02",
+      "deviceId": "D-20432",
+      "hours": 7.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-05-06",
+      "deviceId": "D-20432",
+      "hours": 3,
+      "dose": 9.3
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-05-25",
+      "deviceId": "D-20432",
+      "hours": 6.5,
+      "dose": 22.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-06-04",
+      "deviceId": "D-20432",
+      "hours": 2.5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-06-08",
+      "deviceId": "D-20432",
+      "hours": 2.5,
+      "dose": 4
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-06-16",
+      "deviceId": "D-20432",
+      "hours": 7,
+      "dose": 21.7
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-06-26",
+      "deviceId": "D-20432",
+      "hours": 1.5,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-08-06",
+      "deviceId": "D-20432",
+      "hours": 7.5,
+      "dose": 24.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-08-26",
+      "deviceId": "D-20432",
+      "hours": 1,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-09-15",
+      "deviceId": "D-20432",
+      "hours": 6.5,
+      "dose": 7.7
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-09-23",
+      "deviceId": "D-20432",
+      "hours": 2,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-09-24",
+      "deviceId": "D-20432",
+      "hours": 7,
+      "dose": 18.2
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-10-06",
+      "deviceId": "D-20432",
+      "hours": 5.5,
+      "dose": 4.2
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-10-22",
+      "deviceId": "D-20432",
+      "hours": 5.5,
+      "dose": 16.9
+    },
+    {
+      "pernr": "10062329",
+      "date": "2026-11-03",
+      "deviceId": "D-20432",
+      "hours": 4,
+      "dose": 8.2
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-10-02",
+      "deviceId": "D-20433",
+      "hours": 5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-10-21",
+      "deviceId": "D-20433",
+      "hours": 5.5,
+      "dose": 11.3
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-10-24",
+      "deviceId": "D-20433",
+      "hours": 6.5,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-11-03",
+      "deviceId": "D-20433",
+      "hours": 3,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-11-10",
+      "deviceId": "D-20433",
+      "hours": 2.5,
+      "dose": 3
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-11-26",
+      "deviceId": "D-20433",
+      "hours": 6,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-12-01",
+      "deviceId": "D-20433",
+      "hours": 3.5,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-12-03",
+      "deviceId": "D-20433",
+      "hours": 1.5,
+      "dose": 2
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-12-11",
+      "deviceId": "D-20433",
+      "hours": 2,
+      "dose": 5
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-12-23",
+      "deviceId": "D-20433",
+      "hours": 7.5,
+      "dose": 7.4
+    },
+    {
+      "pernr": "10062466",
+      "date": "2025-12-24",
+      "deviceId": "D-20433",
+      "hours": 7,
+      "dose": 22.6
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-02-12",
+      "deviceId": "D-20433",
+      "hours": 3.5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-03-03",
+      "deviceId": "D-20433",
+      "hours": 5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-03-06",
+      "deviceId": "D-20433",
+      "hours": 3.5,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-04-02",
+      "deviceId": "D-20433",
+      "hours": 5,
+      "dose": 14.7
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-04-15",
+      "deviceId": "D-20433",
+      "hours": 4,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-04-17",
+      "deviceId": "D-20433",
+      "hours": 3.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-05-05",
+      "deviceId": "D-20433",
+      "hours": 4,
+      "dose": 12.7
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-06-05",
+      "deviceId": "D-20433",
+      "hours": 6.5,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-06-10",
+      "deviceId": "D-20433",
+      "hours": 5.5,
+      "dose": 18.1
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-06-19",
+      "deviceId": "D-20433",
+      "hours": 3.5,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-07-09",
+      "deviceId": "D-20433",
+      "hours": 7.5,
+      "dose": 16.5
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-07-20",
+      "deviceId": "D-20433",
+      "hours": 8,
+      "dose": 11
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-07-21",
+      "deviceId": "D-20433",
+      "hours": 8,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-07-24",
+      "deviceId": "D-20433",
+      "hours": 4,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-07-27",
+      "deviceId": "D-20433",
+      "hours": 3.5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-08-17",
+      "deviceId": "D-20433",
+      "hours": 6.5,
+      "dose": 19.6
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-09-04",
+      "deviceId": "D-20433",
+      "hours": 6.5,
+      "dose": 22.9
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-09-07",
+      "deviceId": "D-20433",
+      "hours": 7,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-09-22",
+      "deviceId": "D-20433",
+      "hours": 8,
+      "dose": 5
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-09-25",
+      "deviceId": "D-20433",
+      "hours": 2.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-10-06",
+      "deviceId": "D-20433",
+      "hours": 5.5,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-10-07",
+      "deviceId": "D-20433",
+      "hours": 7,
+      "dose": 16.7
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-10-16",
+      "deviceId": "D-20433",
+      "hours": 3,
+      "dose": 10
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-10-20",
+      "deviceId": "D-20433",
+      "hours": 1.5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10062466",
+      "date": "2026-11-18",
+      "deviceId": "D-20433",
+      "hours": 1,
+      "dose": 0.8
+    },
+    {
+      "pernr": "10062603",
+      "date": "2025-10-22",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2025-10-29",
+      "deviceId": "D-20434",
+      "hours": 1,
+      "dose": 1.6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2025-11-24",
+      "deviceId": "D-20434",
+      "hours": 5,
+      "dose": 6.3
+    },
+    {
+      "pernr": "10062603",
+      "date": "2025-12-10",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10062603",
+      "date": "2025-12-17",
+      "deviceId": "D-20434",
+      "hours": 5,
+      "dose": 14.4
+    },
+    {
+      "pernr": "10062603",
+      "date": "2025-12-22",
+      "deviceId": "D-20434",
+      "hours": 5.5,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-01-05",
+      "deviceId": "D-20434",
+      "hours": 4.5,
+      "dose": 15.3
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-01-08",
+      "deviceId": "D-20434",
+      "hours": 4.5,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-01-23",
+      "deviceId": "D-20434",
+      "hours": 1,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-01-28",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-02-04",
+      "deviceId": "D-20434",
+      "hours": 6.5,
+      "dose": 23.1
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-02-27",
+      "deviceId": "D-20434",
+      "hours": 4.5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-03-05",
+      "deviceId": "D-20434",
+      "hours": 7.5,
+      "dose": 20.9
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-03-25",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 2.4
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-04-01",
+      "deviceId": "D-20434",
+      "hours": 7,
+      "dose": 8.5
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-04-06",
+      "deviceId": "D-20434",
+      "hours": 4.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-04-21",
+      "deviceId": "D-20434",
+      "hours": 1.5,
+      "dose": 3
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-04-22",
+      "deviceId": "D-20434",
+      "hours": 5.5,
+      "dose": 15.4
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-04-27",
+      "deviceId": "D-20434",
+      "hours": 8,
+      "dose": 16
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-05-04",
+      "deviceId": "D-20434",
+      "hours": 7,
+      "dose": 13.8
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-05-08",
+      "deviceId": "D-20434",
+      "hours": 8,
+      "dose": 14.9
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-05-19",
+      "deviceId": "D-20434",
+      "hours": 3.5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-05-26",
+      "deviceId": "D-20434",
+      "hours": 4.5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-05-29",
+      "deviceId": "D-20434",
+      "hours": 6,
+      "dose": 9.6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-06-30",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 6.6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-07-23",
+      "deviceId": "D-20434",
+      "hours": 6,
+      "dose": 13.6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-07-27",
+      "deviceId": "D-20434",
+      "hours": 5.5,
+      "dose": 9.5
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-08-04",
+      "deviceId": "D-20434",
+      "hours": 5.5,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-08-20",
+      "deviceId": "D-20434",
+      "hours": 6.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-08-21",
+      "deviceId": "D-20434",
+      "hours": 3.5,
+      "dose": 6.7
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-08-26",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-09-08",
+      "deviceId": "D-20434",
+      "hours": 2,
+      "dose": 1.8
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-09-11",
+      "deviceId": "D-20434",
+      "hours": 3.5,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-10-12",
+      "deviceId": "D-20434",
+      "hours": 2.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10062603",
+      "date": "2026-11-06",
+      "deviceId": "D-20434",
+      "hours": 5.5,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-10-02",
+      "deviceId": "D-20435",
+      "hours": 6,
+      "dose": 13.7
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-10-21",
+      "deviceId": "D-20435",
+      "hours": 8,
+      "dose": 19.1
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-10-27",
+      "deviceId": "D-20435",
+      "hours": 6.5,
+      "dose": 9.5
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-10-31",
+      "deviceId": "D-20435",
+      "hours": 2,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-11-19",
+      "deviceId": "D-20435",
+      "hours": 5,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-12-02",
+      "deviceId": "D-20435",
+      "hours": 2,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10062740",
+      "date": "2025-12-10",
+      "deviceId": "D-20435",
+      "hours": 5.5,
+      "dose": 17.1
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-01-01",
+      "deviceId": "D-20435",
+      "hours": 4.5,
+      "dose": 35.6
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-01-14",
+      "deviceId": "D-20435",
+      "hours": 2,
+      "dose": 5.5
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-01-29",
+      "deviceId": "D-20435",
+      "hours": 1,
+      "dose": 7
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-02-19",
+      "deviceId": "D-20435",
+      "hours": 8,
+      "dose": 47.3
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-03-11",
+      "deviceId": "D-20435",
+      "hours": 8,
+      "dose": 20
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-03-16",
+      "deviceId": "D-20435",
+      "hours": 4,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-03-31",
+      "deviceId": "D-20435",
+      "hours": 8,
+      "dose": 35.6
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-04-02",
+      "deviceId": "D-20435",
+      "hours": 2.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-04-13",
+      "deviceId": "D-20435",
+      "hours": 5,
+      "dose": 34.8
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-04-14",
+      "deviceId": "D-20435",
+      "hours": 6.5,
+      "dose": 19.8
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-04-24",
+      "deviceId": "D-20435",
+      "hours": 6,
+      "dose": 10.7
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-04-30",
+      "deviceId": "D-20435",
+      "hours": 1.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-05-20",
+      "deviceId": "D-20435",
+      "hours": 2,
+      "dose": 16.1
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-05-27",
+      "deviceId": "D-20435",
+      "hours": 6.5,
+      "dose": 26.3
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-06-02",
+      "deviceId": "D-20435",
+      "hours": 3,
+      "dose": 16.4
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-07-01",
+      "deviceId": "D-20435",
+      "hours": 4.5,
+      "dose": 22.6
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-07-02",
+      "deviceId": "D-20435",
+      "hours": 3,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-07-24",
+      "deviceId": "D-20435",
+      "hours": 4,
+      "dose": 14
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-09-03",
+      "deviceId": "D-20435",
+      "hours": 7.5,
+      "dose": 33
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-09-09",
+      "deviceId": "D-20435",
+      "hours": 5.5,
+      "dose": 23.4
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-09-28",
+      "deviceId": "D-20435",
+      "hours": 3.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10062740",
+      "date": "2026-11-04",
+      "deviceId": "D-20435",
+      "hours": 3,
+      "dose": 18.5
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-10-01",
+      "deviceId": "D-20436",
+      "hours": 1,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-10-03",
+      "deviceId": "D-20436",
+      "hours": 5.5,
+      "dose": 16.9
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-10-07",
+      "deviceId": "D-20436",
+      "hours": 4.5,
+      "dose": 12
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-10-17",
+      "deviceId": "D-20436",
+      "hours": 1.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-10-22",
+      "deviceId": "D-20436",
+      "hours": 5,
+      "dose": 13.5
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-10-23",
+      "deviceId": "D-20436",
+      "hours": 5,
+      "dose": 15.1
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-11-19",
+      "deviceId": "D-20436",
+      "hours": 2,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-12-02",
+      "deviceId": "D-20436",
+      "hours": 4.5,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10062877",
+      "date": "2025-12-24",
+      "deviceId": "D-20436",
+      "hours": 2.5,
+      "dose": 1.6
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-01-21",
+      "deviceId": "D-20436",
+      "hours": 4,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-01-23",
+      "deviceId": "D-20436",
+      "hours": 7.5,
+      "dose": 18.3
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-01-29",
+      "deviceId": "D-20436",
+      "hours": 6.5,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-04-10",
+      "deviceId": "D-20436",
+      "hours": 5,
+      "dose": 10.3
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-04-17",
+      "deviceId": "D-20436",
+      "hours": 5.5,
+      "dose": 5.9
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-04-27",
+      "deviceId": "D-20436",
+      "hours": 3.5,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-04-30",
+      "deviceId": "D-20436",
+      "hours": 1,
+      "dose": 1.4
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-05-11",
+      "deviceId": "D-20436",
+      "hours": 7.5,
+      "dose": 3.1
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-05-13",
+      "deviceId": "D-20436",
+      "hours": 4,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-06-01",
+      "deviceId": "D-20436",
+      "hours": 3,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-06-05",
+      "deviceId": "D-20436",
+      "hours": 7,
+      "dose": 21.3
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-06-09",
+      "deviceId": "D-20436",
+      "hours": 1.5,
+      "dose": 0.9
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-06-16",
+      "deviceId": "D-20436",
+      "hours": 6,
+      "dose": 10.3
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-06-18",
+      "deviceId": "D-20436",
+      "hours": 1.5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-06-19",
+      "deviceId": "D-20436",
+      "hours": 5,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-07-20",
+      "deviceId": "D-20436",
+      "hours": 4,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-07-22",
+      "deviceId": "D-20436",
+      "hours": 6,
+      "dose": 9.8
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-07-29",
+      "deviceId": "D-20436",
+      "hours": 1,
+      "dose": 3.2
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-08-04",
+      "deviceId": "D-20436",
+      "hours": 3.5,
+      "dose": 7.2
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-08-14",
+      "deviceId": "D-20436",
+      "hours": 3,
+      "dose": 2.5
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-09-24",
+      "deviceId": "D-20436",
+      "hours": 1,
+      "dose": 0.6
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-09-25",
+      "deviceId": "D-20436",
+      "hours": 2.5,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-10-06",
+      "deviceId": "D-20436",
+      "hours": 4.5,
+      "dose": 9.1
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-10-08",
+      "deviceId": "D-20436",
+      "hours": 6.5,
+      "dose": 7
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-10-19",
+      "deviceId": "D-20436",
+      "hours": 3,
+      "dose": 3.5
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-10-22",
+      "deviceId": "D-20436",
+      "hours": 3,
+      "dose": 7
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-10-29",
+      "deviceId": "D-20436",
+      "hours": 2.5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-11-12",
+      "deviceId": "D-20436",
+      "hours": 3,
+      "dose": 2.6
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-11-13",
+      "deviceId": "D-20436",
+      "hours": 4,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10062877",
+      "date": "2026-11-18",
+      "deviceId": "D-20436",
+      "hours": 1.5,
+      "dose": 2.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-10-13",
+      "deviceId": "D-20437",
+      "hours": 1.5,
+      "dose": 2
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-10-29",
+      "deviceId": "D-20437",
+      "hours": 3.5,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-11-03",
+      "deviceId": "D-20437",
+      "hours": 1,
+      "dose": 3.3
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-11-04",
+      "deviceId": "D-20437",
+      "hours": 7.5,
+      "dose": 12.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-12-09",
+      "deviceId": "D-20437",
+      "hours": 2.5,
+      "dose": 8.4
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-12-12",
+      "deviceId": "D-20437",
+      "hours": 8,
+      "dose": 8.7
+    },
+    {
+      "pernr": "10063014",
+      "date": "2025-12-25",
+      "deviceId": "D-20437",
+      "hours": 7.5,
+      "dose": 7.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-01-12",
+      "deviceId": "D-20437",
+      "hours": 5.5,
+      "dose": 10.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-01-16",
+      "deviceId": "D-20437",
+      "hours": 6.5,
+      "dose": 22.5
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-02-03",
+      "deviceId": "D-20437",
+      "hours": 2.5,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-02-16",
+      "deviceId": "D-20437",
+      "hours": 7,
+      "dose": 19.5
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-02-18",
+      "deviceId": "D-20437",
+      "hours": 2,
+      "dose": 3
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-03-11",
+      "deviceId": "D-20437",
+      "hours": 8,
+      "dose": 8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-03-30",
+      "deviceId": "D-20437",
+      "hours": 7,
+      "dose": 17.1
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-04-06",
+      "deviceId": "D-20437",
+      "hours": 3.5,
+      "dose": 8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-04-07",
+      "deviceId": "D-20437",
+      "hours": 3.5,
+      "dose": 7.6
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-04-17",
+      "deviceId": "D-20437",
+      "hours": 5,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-05-18",
+      "deviceId": "D-20437",
+      "hours": 4.5,
+      "dose": 2.7
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-06-09",
+      "deviceId": "D-20437",
+      "hours": 5,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-06-23",
+      "deviceId": "D-20437",
+      "hours": 2.5,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-08-07",
+      "deviceId": "D-20437",
+      "hours": 3,
+      "dose": 7
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-08-17",
+      "deviceId": "D-20437",
+      "hours": 8,
+      "dose": 8.1
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-08-31",
+      "deviceId": "D-20437",
+      "hours": 4,
+      "dose": 7.5
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-09-17",
+      "deviceId": "D-20437",
+      "hours": 5.5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-09-25",
+      "deviceId": "D-20437",
+      "hours": 3,
+      "dose": 5.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-10-02",
+      "deviceId": "D-20437",
+      "hours": 8,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-10-08",
+      "deviceId": "D-20437",
+      "hours": 2,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-10-21",
+      "deviceId": "D-20437",
+      "hours": 2,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-10-30",
+      "deviceId": "D-20437",
+      "hours": 8,
+      "dose": 15.5
+    },
+    {
+      "pernr": "10063014",
+      "date": "2026-11-12",
+      "deviceId": "D-20437",
+      "hours": 7,
+      "dose": 18.3
+    },
+    {
+      "pernr": "10063151",
+      "date": "2025-10-17",
+      "deviceId": "D-20438",
+      "hours": 3.5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10063151",
+      "date": "2025-10-22",
+      "deviceId": "D-20438",
+      "hours": 2.5,
+      "dose": 4.6
+    },
+    {
+      "pernr": "10063151",
+      "date": "2025-12-16",
+      "deviceId": "D-20438",
+      "hours": 7.5,
+      "dose": 5
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-01-14",
+      "deviceId": "D-20438",
+      "hours": 6,
+      "dose": 3.7
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-01-15",
+      "deviceId": "D-20438",
+      "hours": 3.5,
+      "dose": 11.1
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-01-22",
+      "deviceId": "D-20438",
+      "hours": 2,
+      "dose": 3.9
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-01-26",
+      "deviceId": "D-20438",
+      "hours": 8,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-02-16",
+      "deviceId": "D-20438",
+      "hours": 8,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-03-05",
+      "deviceId": "D-20438",
+      "hours": 5.5,
+      "dose": 14.8
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-03-12",
+      "deviceId": "D-20438",
+      "hours": 2,
+      "dose": 0.9
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-03-16",
+      "deviceId": "D-20438",
+      "hours": 6.5,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-04-06",
+      "deviceId": "D-20438",
+      "hours": 5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-04-16",
+      "deviceId": "D-20438",
+      "hours": 2,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-05-08",
+      "deviceId": "D-20438",
+      "hours": 5.5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-05-13",
+      "deviceId": "D-20438",
+      "hours": 8,
+      "dose": 23.6
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-05-19",
+      "deviceId": "D-20438",
+      "hours": 6,
+      "dose": 17.5
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-05-28",
+      "deviceId": "D-20438",
+      "hours": 7.5,
+      "dose": 25.5
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-06-23",
+      "deviceId": "D-20438",
+      "hours": 1,
+      "dose": 0.5
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-07-14",
+      "deviceId": "D-20438",
+      "hours": 2,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-07-28",
+      "deviceId": "D-20438",
+      "hours": 5.5,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-08-12",
+      "deviceId": "D-20438",
+      "hours": 1.5,
+      "dose": 1.7
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-09-25",
+      "deviceId": "D-20438",
+      "hours": 6.5,
+      "dose": 22.3
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-10-01",
+      "deviceId": "D-20438",
+      "hours": 4.5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-10-20",
+      "deviceId": "D-20438",
+      "hours": 7.5,
+      "dose": 17.3
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-10-23",
+      "deviceId": "D-20438",
+      "hours": 4,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-11-02",
+      "deviceId": "D-20438",
+      "hours": 2,
+      "dose": 5.5
+    },
+    {
+      "pernr": "10063151",
+      "date": "2026-11-06",
+      "deviceId": "D-20438",
+      "hours": 7.5,
+      "dose": 18.8
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-10-02",
+      "deviceId": "D-20439",
+      "hours": 5,
+      "dose": 6.5
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-10-07",
+      "deviceId": "D-20439",
+      "hours": 3,
+      "dose": 10.2
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-10-14",
+      "deviceId": "D-20439",
+      "hours": 7,
+      "dose": 13.6
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-10-15",
+      "deviceId": "D-20439",
+      "hours": 3.5,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-11-04",
+      "deviceId": "D-20439",
+      "hours": 7.5,
+      "dose": 18
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-11-10",
+      "deviceId": "D-20439",
+      "hours": 3.5,
+      "dose": 9.4
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-12-04",
+      "deviceId": "D-20439",
+      "hours": 2.5,
+      "dose": 1.2
+    },
+    {
+      "pernr": "10063288",
+      "date": "2025-12-26",
+      "deviceId": "D-20439",
+      "hours": 6,
+      "dose": 11.5
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-01-01",
+      "deviceId": "D-20439",
+      "hours": 3.5,
+      "dose": 6
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-01-07",
+      "deviceId": "D-20439",
+      "hours": 6.5,
+      "dose": 5.1
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-01-21",
+      "deviceId": "D-20439",
+      "hours": 5.5,
+      "dose": 8.3
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-01-28",
+      "deviceId": "D-20439",
+      "hours": 4,
+      "dose": 11.2
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-02-12",
+      "deviceId": "D-20439",
+      "hours": 2,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-03-04",
+      "deviceId": "D-20439",
+      "hours": 3,
+      "dose": 9
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-03-05",
+      "deviceId": "D-20439",
+      "hours": 8,
+      "dose": 27.6
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-03-20",
+      "deviceId": "D-20439",
+      "hours": 8,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-03-25",
+      "deviceId": "D-20439",
+      "hours": 6,
+      "dose": 5.6
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-03-31",
+      "deviceId": "D-20439",
+      "hours": 3.5,
+      "dose": 6.8
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-04-06",
+      "deviceId": "D-20439",
+      "hours": 6,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-04-20",
+      "deviceId": "D-20439",
+      "hours": 1.5,
+      "dose": 4.7
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-04-23",
+      "deviceId": "D-20439",
+      "hours": 2.5,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-05-12",
+      "deviceId": "D-20439",
+      "hours": 6,
+      "dose": 12.5
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-05-14",
+      "deviceId": "D-20439",
+      "hours": 7.5,
+      "dose": 15.2
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-05-29",
+      "deviceId": "D-20439",
+      "hours": 5.5,
+      "dose": 14.3
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-06-12",
+      "deviceId": "D-20439",
+      "hours": 2,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-06-30",
+      "deviceId": "D-20439",
+      "hours": 2,
+      "dose": 5.4
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-07-29",
+      "deviceId": "D-20439",
+      "hours": 2,
+      "dose": 4.5
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-07-30",
+      "deviceId": "D-20439",
+      "hours": 4.5,
+      "dose": 11
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-08-06",
+      "deviceId": "D-20439",
+      "hours": 6,
+      "dose": 6.1
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-08-20",
+      "deviceId": "D-20439",
+      "hours": 7.5,
+      "dose": 12.9
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-08-25",
+      "deviceId": "D-20439",
+      "hours": 2.5,
+      "dose": 9
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-09-03",
+      "deviceId": "D-20439",
+      "hours": 1,
+      "dose": 2.3
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-09-25",
+      "deviceId": "D-20439",
+      "hours": 4.5,
+      "dose": 7.2
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-09-28",
+      "deviceId": "D-20439",
+      "hours": 3,
+      "dose": 5.3
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-09-30",
+      "deviceId": "D-20439",
+      "hours": 7,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-10-26",
+      "deviceId": "D-20439",
+      "hours": 2,
+      "dose": 6.2
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-10-28",
+      "deviceId": "D-20439",
+      "hours": 5.5,
+      "dose": 12.6
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-11-06",
+      "deviceId": "D-20439",
+      "hours": 3.5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10063288",
+      "date": "2026-11-20",
+      "deviceId": "D-20439",
+      "hours": 1,
+      "dose": 1.3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2025-11-13",
+      "deviceId": "D-20440",
+      "hours": 7.5,
+      "dose": 18.3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2025-11-24",
+      "deviceId": "D-20440",
+      "hours": 1,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10063425",
+      "date": "2025-11-27",
+      "deviceId": "D-20440",
+      "hours": 7,
+      "dose": 24.1
+    },
+    {
+      "pernr": "10063425",
+      "date": "2025-12-11",
+      "deviceId": "D-20440",
+      "hours": 6.5,
+      "dose": 12.3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-01-09",
+      "deviceId": "D-20440",
+      "hours": 4,
+      "dose": 9.9
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-01-29",
+      "deviceId": "D-20440",
+      "hours": 3,
+      "dose": 7
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-02-18",
+      "deviceId": "D-20440",
+      "hours": 3.5,
+      "dose": 8.6
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-03-10",
+      "deviceId": "D-20440",
+      "hours": 3.5,
+      "dose": 3.4
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-03-31",
+      "deviceId": "D-20440",
+      "hours": 4.5,
+      "dose": 15.1
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-04-01",
+      "deviceId": "D-20440",
+      "hours": 4,
+      "dose": 9.7
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-04-08",
+      "deviceId": "D-20440",
+      "hours": 5.5,
+      "dose": 10.1
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-04-09",
+      "deviceId": "D-20440",
+      "hours": 8,
+      "dose": 13.2
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-05-01",
+      "deviceId": "D-20440",
+      "hours": 6,
+      "dose": 3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-05-27",
+      "deviceId": "D-20440",
+      "hours": 1.5,
+      "dose": 1.9
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-05-29",
+      "deviceId": "D-20440",
+      "hours": 4.5,
+      "dose": 7.9
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-06-01",
+      "deviceId": "D-20440",
+      "hours": 5.5,
+      "dose": 4.4
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-06-02",
+      "deviceId": "D-20440",
+      "hours": 5,
+      "dose": 3.6
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-06-16",
+      "deviceId": "D-20440",
+      "hours": 4.5,
+      "dose": 7.3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-06-29",
+      "deviceId": "D-20440",
+      "hours": 1.5,
+      "dose": 4.8
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-07-17",
+      "deviceId": "D-20440",
+      "hours": 8,
+      "dose": 19.8
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-07-30",
+      "deviceId": "D-20440",
+      "hours": 8,
+      "dose": 13.1
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-08-20",
+      "deviceId": "D-20440",
+      "hours": 7,
+      "dose": 12.4
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-08-26",
+      "deviceId": "D-20440",
+      "hours": 4.5,
+      "dose": 8.8
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-08-27",
+      "deviceId": "D-20440",
+      "hours": 1.5,
+      "dose": 4.3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-09-08",
+      "deviceId": "D-20440",
+      "hours": 5.5,
+      "dose": 9.3
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-09-16",
+      "deviceId": "D-20440",
+      "hours": 5,
+      "dose": 2.9
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-10-22",
+      "deviceId": "D-20440",
+      "hours": 5,
+      "dose": 12.7
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-10-27",
+      "deviceId": "D-20440",
+      "hours": 8,
+      "dose": 23.1
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-11-04",
+      "deviceId": "D-20440",
+      "hours": 7,
+      "dose": 6.4
+    },
+    {
+      "pernr": "10063425",
+      "date": "2026-11-06",
+      "deviceId": "D-20440",
+      "hours": 6,
+      "dose": 8.8
+    }
+  ]
+}
